@@ -1,11 +1,11 @@
 (function(){
   const GOOD_KEY='sb_publishable_qw6fTcjRikLZqzjQgDaBsg_EvGQgiU';
   try{
-    if(window.supabase&&window.sb){
+    if(typeof sb!=='undefined'&&window.supabase){
       const good=window.supabase.createClient('https://uiyvzzuyjgbztijyxflb.supabase.co',GOOD_KEY);
-      window.sb.auth=good.auth;
-      window.sb.from=good.from.bind(good);
-      window.sb.rpc=good.rpc.bind(good);
+      sb.auth=good.auth;
+      sb.from=good.from.bind(good);
+      sb.rpc=good.rpc.bind(good);
     }
   }catch(e){console.error('Supabase client patch failed',e)}
   function localToday(){const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`}
