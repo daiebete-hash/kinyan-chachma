@@ -1038,6 +1038,19 @@ body.theme-bava{--accent:#17665d;--accent2:#104c45;--accent-soft:#e5f3ef;--accen
 .weekly-list-item:last-child{border-bottom:0}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.admin-tool-form label,.weekly-form label{display:block;font-weight:800;color:var(--accent-ink);margin:10px 0 6px}.weekly-form input,.weekly-form textarea,.weekly-form select,.weekly-form input[type=text],.weekly-form input[type=number],.weekly-form input[type=url],.weekly-form input[type=email]{width:100%;padding:11px;border:1px solid #d8d2c5;border-radius:10px;background:white}.weekly-form textarea{min-height:90px}.published-chip{display:inline-block;border-radius:20px;padding:5px 9px;background:#e2f4e7;color:#17683a;font-size:12px;font-weight:800}.draft-chip{display:inline-block;border-radius:20px;padding:5px 9px;background:#f7edda;color:#795a1d;font-size:12px;font-weight:800}.empty-note{padding:20px;background:#fff;border:1px dashed #d6cbb7;border-radius:15px;color:var(--muted)}.admin-action-row{display:flex;gap:8px;flex-wrap:wrap}.small-action{border:1px solid var(--line);border-radius:9px;padding:7px 10px;background:white;color:var(--accent);font-weight:800}.resource-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.resource-link{display:block;color:var(--accent);font-weight:900;text-decoration:none;margin-top:10px;overflow-wrap:anywhere}.top{gap:12px}.project-logo{max-width:70px;height:auto}.brand-copy{display:inline-block;vertical-align:middle;margin-inline-start:8px}.brand{display:flex;align-items:center;gap:8px}.brand-copy small{display:block}
 @media(max-width:650px){.form-grid,.resource-list{grid-template-columns:1fr}.top{align-items:flex-start}.project-logo{max-width:54px}.brand-copy b{font-size:19px}.masechet-link{font-size:12px;padding:8px}.weekly-list-item{align-items:flex-start;flex-direction:column}}
 </style>
+<script id="kch-global-bridge">
+/* Puente explícito entre la aplicación base y la capa de interfaz final. */
+window.SUPABASE_URL = window.SUPABASE_URL || 'https://uiyvzzuyjgbztijyxflb.supabase.co';
+window.SUPABASE_KEY = window.SUPABASE_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVpeXZ6enV5amdienRpanl4ZmxiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg0MTA3MDcsImV4cCI6MjEwMzk4NjcwN30.c7AmS3FgbLCm-1Fg0TwXKb6L29kPF_3F20oEY4BA4N8';
+window.PAGE_MASECHET = new URLSearchParams(location.search).get('masechet') === 'bava' ? 'בבא קמא' : 'סנהדרין';
+window.currentMasechet = window.PAGE_MASECHET;
+window.toolsMasechet = window.PAGE_MASECHET;
+window.toolsType = window.toolsType || 'summary';
+window.user = window.user || null;
+window.profile = window.profile || null;
+window.currentIndex = Number.isInteger(window.currentIndex) ? window.currentIndex : 0;
+if (!window.sb && window.supabase) window.sb = window.supabase.createClient(window.SUPABASE_URL, window.SUPABASE_KEY);
+</script>
 <script id="kinyan-final-architecture-js">
 // Nueva arquitectura: dos espacios independientes, publicación manual y sin cuentas de alumnos.
 let kchPublishedWeek = null;
