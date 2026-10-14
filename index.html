@@ -1,4 +1,1119 @@
-<!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#092844"><title>קנין תורה | חוזרים יודעים</title><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><style>
-:root{--navy:#0a2037;--navy2:#153b5b;--gold:#c59a48;--paper:#fffdfa;--ink:#182638;--muted:#718093;--line:#e4dfd4;--green:#238052;--red:#b83a3a;--shadow:0 16px 40px rgba(10,32,55,.09)}*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#f8f5ef,#efebe3);color:var(--ink);font-family:Arial,"Noto Sans Hebrew",sans-serif}button,input{font:inherit}button{cursor:pointer}.wrap{width:min(1000px,calc(100% - 24px));margin:auto;padding-bottom:105px}.top{padding:20px 0;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;color:var(--navy);font-size:24px}.brand small{display:block;color:var(--gold);font-size:11px;letter-spacing:2px}.outline,.primary,.secondary,.status,.switch{border-radius:12px;padding:10px 14px;border:1px solid var(--line);background:#fff;color:var(--navy);font-weight:800}.primary{background:var(--navy);border-color:var(--navy);color:#fff}.secondary{background:linear-gradient(135deg,#fff8e7,#ead29c);border-color:#e1c98f;color:#6f5424}.view{display:none}.view.active{display:block}.hero-card,.section-hero{border-radius:28px;background:linear-gradient(145deg,#081c31,#173b5d);color:#fff;padding:30px;box-shadow:var(--shadow);border:1px solid rgba(197,154,72,.35)}.hero-kicker,.section-hero span{display:inline-block;background:#f2dca9;color:#634b21;border-radius:999px;padding:7px 14px;font-weight:900;font-size:13px}.hero-card h1,.section-hero h2{margin:12px 0 7px;font-size:34px;color:#fff}.hero-card p,.section-hero p{margin:0;color:#c8d1dc;line-height:1.8}.section-head{display:flex;justify-content:space-between;align-items:center;gap:15px;margin:28px 2px 14px}.section-head h2,.section-head h3{margin:0;color:var(--navy)}.section-head p{margin:4px 0;color:var(--muted)}.card{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:22px;margin:16px 0;box-shadow:0 8px 26px rgba(10,32,55,.05)}.current-week{border-top:4px solid var(--gold)}.week-top{display:flex;justify-content:space-between;align-items:center;gap:12px}.badge{display:inline-flex;background:#f5e9ce;color:#735720;border:1px solid #e5ce9a;border-radius:999px;padding:7px 12px;font-weight:900;font-size:13px}.current-week h2{font-size:29px;color:var(--navy);margin:20px 0 8px}.week-meta,.meta{color:var(--muted);line-height:1.7}.week-info-grid{display:grid;grid-template-columns:1fr 1fr;margin-top:20px;background:#102d4b;color:#fff;border-radius:18px;overflow:hidden}.week-info-grid>div{padding:15px;text-align:center}.week-info-grid>div+div{border-right:1px solid rgba(255,255,255,.15)}.week-info-grid small{display:block;color:#e0c477;margin-bottom:4px}.home-masechet-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0 24px}.home-masechet-actions button{min-height:58px;font-size:17px;font-weight:900;border-radius:16px}.masechet-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}.masechet-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px;cursor:pointer;transition:.2s}.masechet-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#d9c08a}.gold-dot{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:#f2e4c4;color:#8b682c;font-size:20px}.masechet-card h3{font-size:27px;margin:16px 0 7px;color:var(--navy)}.card-link{margin-top:18px;color:var(--navy);font-weight:900}.switches{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.switch.selected{background:var(--navy);color:#fff;border-color:var(--navy)}.bar{height:14px;background:#e8e2d7;border-radius:999px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,#b98a34,#dfc174);border-radius:999px}.big-percent{font-size:42px;font-weight:900;color:var(--navy);text-align:center;margin:8px 0}.perek-line{padding:14px 0;border-bottom:1px solid var(--line)}.perek-line:last-child{border-bottom:0}.perek-line>div:first-child{display:flex;justify-content:space-between;gap:10px;margin-bottom:7px}.perek-line span{font-weight:900;color:var(--gold)}.perek-line small{color:var(--muted)}.table-card{padding:0;overflow:hidden}.table-card h3{padding:20px 22px;margin:0}.table-scroll{overflow:auto}table{width:100%;border-collapse:collapse;min-width:720px}th,td{padding:12px;text-align:right;border-bottom:1px solid var(--line);font-size:14px}th{background:#f4f0e7;color:#64563f}.current-row td{background:#fff8e5}.hespek{font-weight:900;color:#785b23}.auth-head{display:flex;gap:13px;align-items:center;margin-bottom:20px}.auth-head h2{margin:0;color:var(--navy)}.auth-head p{margin:3px 0;color:var(--muted)}.auth-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.auth-grid>div{padding:20px;border:1px solid var(--line);border-radius:20px;background:#fbfaf6}.auth-grid .signup{background:linear-gradient(145deg,#fffdf7,#f8f0df)}.auth-grid label{display:block;color:var(--navy);font-weight:900;margin:10px 0 7px}input{width:100%;padding:12px;border:1px solid #d8d2c5;border-radius:11px;background:#fff;outline:0;margin-bottom:7px}.auth-grid button{width:100%;margin-top:8px}.success{color:var(--green);font-weight:800;margin-top:12px}.error{color:var(--red);font-weight:800;margin-top:12px}.profile-card{display:flex;justify-content:space-between;align-items:center}.stat-grid,.admin-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat,.admin-stats>div{background:#fff;border:1px solid var(--line);border-radius:20px;padding:17px}.stat small,.admin-stats small{display:block;color:var(--muted);font-weight:800}.stat strong,.admin-stats b{display:block;color:var(--navy);font-size:29px;margin-top:6px}.current-progress{border-top:4px solid var(--gold)}.status-buttons{display:flex;gap:8px;flex-wrap:wrap}.status{flex:1;min-width:130px}.status.chosen{background:var(--navy);color:#fff;border-color:var(--navy)}.save-msg{margin-top:10px;color:var(--muted);font-weight:800}.makeup{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.makeup>div:first-child span{display:block;color:var(--muted);font-size:13px;margin-top:3px}.mini-status{padding:6px 10px;border-radius:999px;font-size:12px;font-weight:900}.completed{background:#dff3e5;color:#18733e}.partial{background:#fff0d2;color:#a86700}.not_started{background:#f6e0e0;color:#a73434}.makeup-buttons{display:flex;gap:4px}.makeup-buttons button{border:1px solid var(--line);background:#fff;border-radius:9px;padding:6px 9px;font-weight:900}.first-admin{border:1px solid #e0c88d;background:#fff9eb}.login-hint{text-align:center;padding:18px;color:var(--muted)}nav{position:fixed;z-index:30;bottom:9px;left:50%;transform:translateX(-50%);width:min(700px,calc(100% - 18px));height:72px;background:linear-gradient(145deg,#091c31,#143655);border:1px solid rgba(197,154,72,.25);border-radius:24px;display:flex;overflow:hidden;box-shadow:0 18px 42px rgba(0,0,0,.25)}nav button{flex:1;border:0;background:transparent;color:#aeb8c3;font-weight:800;font-size:13px}nav button.active{color:#f1d38d;background:rgba(197,154,72,.08);box-shadow:inset 0 -3px 0 var(--gold)}.hidden{display:none!important}.admin-stats>div span{display:block;color:var(--muted);font-size:12px;margin-top:4px}.admin-chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.admin-card-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.admin-card-head h3{margin:0;color:var(--navy)}.admin-card-head p{margin:3px 0}.group-chart{display:grid;gap:20px}.group-chart label{display:flex;justify-content:space-between;font-weight:900;color:var(--navy);margin-bottom:8px}.bar.big{height:18px}.dist-wrap{margin-bottom:8px}.dist-bar{height:15px;border-radius:999px;overflow:hidden;background:#eee;display:flex}.dist-bar i{height:100%;display:block}.dist-bar i:nth-child(1){background:#238052}.dist-bar i:nth-child(2){background:#d59a38}.dist-bar i:nth-child(3){background:#b83a3a}.dist-legend{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;color:var(--muted);font-size:12px}.dist-legend span{display:inline-flex;align-items:center;gap:5px}.dot{width:8px;height:8px;border-radius:50%;display:inline-block}.done-dot{background:#238052}.partial-dot{background:#d59a38}.pending-dot{background:#b83a3a}.admin-list-head{margin-top:30px}.admin-members{display:grid;grid-template-columns:1fr 1fr;gap:14px}.admin-member-card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:19px;box-shadow:0 7px 24px rgba(10,32,55,.05)}.admin-member-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.admin-member-top h3{margin:0;color:var(--navy);font-size:20px}.admin-member-top small{color:var(--muted)}.admin-progress-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}.admin-progress-grid>div>div:first-child{display:flex;justify-content:space-between;margin-bottom:7px;color:var(--navy)}.admin-progress-grid strong{color:var(--gold)}.admin-current{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-top:15px;padding-top:12px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}.admin-current>span:first-child{font-weight:900;color:var(--navy);margin-left:2px}.detail-card{scroll-margin-top:20px}.detail-top{display:flex;justify-content:space-between;align-items:flex-start;gap:15px}.detail-top h2{margin:10px 0 0;color:var(--navy)}.member-detail-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}.member-detail-stat{background:#fbfaf6;border:1px solid var(--line);border-radius:16px;padding:14px}.member-detail-stat small{display:block;color:var(--muted);font-weight:800}.member-detail-stat b{display:block;font-size:28px;color:var(--navy);margin:4px 0 9px}.detail-switches{display:flex;gap:8px;margin:15px 0}.detail-two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}.detail-two-col>div{border-top:1px solid var(--line);padding-top:14px}.detail-two-col h3{color:var(--navy);margin:0 0 8px}.admin-week-list{max-height:500px;overflow:auto;border:1px solid var(--line);border-radius:14px}.admin-week-row{display:grid;grid-template-columns:90px 1fr auto;gap:9px;align-items:center;padding:10px 12px;border-bottom:1px solid var(--line);font-size:12px}.admin-week-row:last-child{border-bottom:0}.admin-week-row:nth-child(even){background:#fbfaf6}.week-no{font-weight:900;color:var(--navy)}.week-hespek{color:#76571f;font-weight:700}.empty{text-align:center;color:var(--muted);padding:30px}
+<!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#153b5b"><title>קנין תורה</title><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><style>
+:root{--navy:#0a2037;--navy2:#153b5b;--gold:#c59a48;--cream:#f5f1e8;--paper:#fffdfa;--ink:#182638;--muted:#718093;--line:#e4dfd4;--green:#238052;--orange:#b87816;--red:#b83a3a;--shadow:0 16px 40px rgba(10,32,55,.09)}*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#f8f5ef,#efebe3);color:var(--ink);font-family:Arial,"Noto Sans Hebrew",sans-serif}button,input{font:inherit}button{cursor:pointer}.wrap{width:min(1000px,calc(100% - 24px));margin:auto;padding-bottom:105px}.top{padding:20px 0;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;color:var(--navy);font-size:24px}.brand small{display:block;color:var(--gold);font-size:11px;letter-spacing:2px}.top-actions{display:flex;gap:8px}.outline,.primary,.secondary,.status,.switch{border-radius:12px;padding:10px 14px;border:1px solid var(--line);background:#fff;color:var(--navy);font-weight:800}.primary{background:var(--navy);border-color:var(--navy);color:#fff}.secondary{background:linear-gradient(135deg,#fff8e7,#ead29c);border-color:#e1c98f;color:#6f5424}.view{display:none}.view.active{display:block}.hero-card,.section-hero{border-radius:28px;background:linear-gradient(145deg,#081c31,#173b5d);color:#fff;padding:30px;box-shadow:var(--shadow);border:1px solid rgba(197,154,72,.35)}.hero-kicker,.section-hero span{display:inline-block;background:#f2dca9;color:#634b21;border-radius:999px;padding:7px 14px;font-weight:900;font-size:13px}.hero-card h1,.section-hero h2{margin:12px 0 7px;font-size:34px}.hero-card p,.section-hero p{margin:0;color:#c8d1dc;line-height:1.8}.section-head{display:flex;justify-content:space-between;align-items:center;gap:15px;margin:28px 2px 14px}.section-head h2,.section-head h3{margin:0;color:var(--navy)}.section-head p{margin:4px 0;color:var(--muted)}.card{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:22px;margin:16px 0;box-shadow:0 8px 26px rgba(10,32,55,.05)}.current-week{border-top:4px solid var(--gold)}.week-top{display:flex;justify-content:space-between;align-items:center;gap:12px}.badge{display:inline-flex;background:#f5e9ce;color:#735720;border:1px solid #e5ce9a;border-radius:999px;padding:7px 12px;font-weight:900;font-size:13px}.current-week h2{font-size:29px;color:var(--navy);margin:20px 0 8px}.week-meta,.meta{color:var(--muted);line-height:1.7}.week-info-grid{display:grid;grid-template-columns:1fr 1fr;margin-top:20px;background:#102d4b;color:#fff;border-radius:18px;overflow:hidden}.week-info-grid>div{padding:15px;text-align:center}.week-info-grid>div+div{border-right:1px solid rgba(255,255,255,.15)}.week-info-grid small{display:block;color:#e0c477;margin-bottom:4px}.masechet-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}.masechet-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px;cursor:pointer;transition:.2s}.masechet-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#d9c08a}.gold-dot{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:#f2e4c4;color:#8b682c;font-size:20px}.masechet-card h3{font-size:27px;margin:16px 0 7px;color:var(--navy)}.card-link{margin-top:18px;color:var(--navy);font-weight:900}.chooser label,.auth-card label{display:block;color:var(--navy);font-weight:900;margin:10px 0 7px}.switches{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.switch.selected{background:var(--navy);color:#fff;border-color:var(--navy)}.bar{height:14px;background:#e8e2d7;border-radius:999px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,#b98a34,#dfc174);border-radius:999px}.big-percent{font-size:42px;font-weight:900;color:var(--navy);text-align:center;margin:8px 0}.perek-line{padding:14px 0;border-bottom:1px solid var(--line)}.perek-line:last-child{border-bottom:0}.perek-line>div:first-child{display:flex;justify-content:space-between;gap:10px;margin-bottom:7px}.perek-line span{font-weight:900;color:var(--gold)}.perek-line small{color:var(--muted)}.table-card{padding:0;overflow:hidden}.table-card h3{padding:20px 22px;margin:0}.table-scroll{overflow:auto}table{width:100%;border-collapse:collapse;min-width:720px}th,td{padding:12px;text-align:right;border-bottom:1px solid var(--line);font-size:14px}th{background:#f4f0e7;color:#64563f}.current-row td{background:#fff8e5}.hespek{font-weight:900;color:#785b23}.auth-head{display:flex;gap:13px;align-items:center;margin-bottom:20px}.auth-head h2{margin:0;color:var(--navy)}.auth-head p{margin:3px 0;color:var(--muted)}.auth-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.auth-grid>div{padding:20px;border:1px solid var(--line);border-radius:20px;background:#fbfaf6}.auth-grid .signup{background:linear-gradient(145deg,#fffdf7,#f8f0df)}input{width:100%;padding:12px;border:1px solid #d8d2c5;border-radius:11px;background:#fff;outline:0;margin-bottom:7px}input:focus{border-color:#b99a60;box-shadow:0 0 0 3px rgba(185,154,96,.12)}.auth-grid button{width:100%;margin-top:8px}.success{color:var(--green);font-weight:800;margin-top:12px}.error{color:var(--red);font-weight:800;margin-top:12px}.profile-card{display:flex;justify-content:space-between;align-items:center}.stat-grid,.admin-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat,.admin-stats>div{background:#fff;border:1px solid var(--line);border-radius:20px;padding:17px}.stat small,.admin-stats small{display:block;color:var(--muted);font-weight:800}.stat strong,.admin-stats b{display:block;color:var(--navy);font-size:29px;margin-top:6px}.current-progress{border-top:4px solid var(--gold)}.status-buttons{display:flex;gap:8px;flex-wrap:wrap}.status{flex:1;min-width:130px}.status.chosen{background:var(--navy);color:#fff;border-color:var(--navy)}.save-msg{margin-top:10px;color:var(--muted);font-weight:800}.makeup{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.makeup>div:first-child span{display:block;color:var(--muted);font-size:13px;margin-top:3px}.mini-status{padding:6px 10px;border-radius:999px;font-size:12px;font-weight:900}.completed{background:#dff3e5;color:#18733e}.partial{background:#fff0d2;color:#a86700}.not_started{background:#f6e0e0;color:#a73434}.makeup-buttons{display:flex;gap:4px}.makeup-buttons button{border:1px solid var(--line);background:#fff;border-radius:9px;padding:6px 9px;font-weight:900}.detail-block{margin-top:18px;padding-top:15px;border-top:1px solid var(--line)}.detail-row{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--line)}.first-admin{border:1px solid #e0c88d;background:#fff9eb}.admin{margin-bottom:18px}.login-hint{text-align:center;padding:18px;color:var(--muted)}nav{position:fixed;z-index:30;bottom:9px;left:50%;transform:translateX(-50%);width:min(700px,calc(100% - 18px));height:72px;background:linear-gradient(145deg,#091c31,#143655);border:1px solid rgba(197,154,72,.25);border-radius:24px;display:flex;overflow:hidden;box-shadow:0 18px 42px rgba(0,0,0,.25)}nav button{flex:1;border:0;background:transparent;color:#aeb8c3;font-weight:800;font-size:13px}nav button.active{color:#f1d38d;background:rgba(197,154,72,.08);box-shadow:inset 0 -3px 0 var(--gold)}.hidden{display:none!important}@media(max-width:700px){.masechet-cards,.auth-grid{grid-template-columns:1fr}.stat-grid,.admin-stats{grid-template-columns:1fr 1fr}.hero-card h1,.section-hero h2{font-size:29px}.makeup{grid-template-columns:1fr auto}.makeup-buttons{grid-column:1/-1}.top-actions{display:none}}@media(max-width:450px){.wrap{width:min(100% - 16px,1000px)}.card{padding:18px}.status{min-width:100px}.week-info-grid{grid-template-columns:1fr}.week-info-grid>div+div{border-right:0;border-top:1px solid rgba(255,255,255,.15)}}
+
+.admin-stats>div span{display:block;color:var(--muted);font-size:12px;margin-top:4px}.admin-chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.admin-card-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.admin-card-head h3{margin:0;color:var(--navy)}.admin-card-head p{margin:3px 0}.group-chart{display:grid;gap:20px}.group-chart label{display:flex;justify-content:space-between;font-weight:900;color:var(--navy);margin-bottom:8px}.bar.big{height:18px}.dist-wrap{margin-bottom:8px}.dist-bar{height:15px;border-radius:999px;overflow:hidden;background:#eee;display:flex}.dist-bar i{height:100%;display:block}.dist-bar i:nth-child(1){background:#238052}.dist-bar i:nth-child(2){background:#d59a38}.dist-bar i:nth-child(3){background:#b83a3a}.dist-legend{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;color:var(--muted);font-size:12px}.dist-legend span{display:inline-flex;align-items:center;gap:5px}.dot{width:8px;height:8px;border-radius:50%;display:inline-block}.done-dot{background:#238052}.partial-dot{background:#d59a38}.pending-dot{background:#b83a3a}.admin-list-head{margin-top:30px}.admin-members{display:grid;grid-template-columns:1fr 1fr;gap:14px}.admin-member-card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:19px;box-shadow:0 7px 24px rgba(10,32,55,.05)}.admin-member-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.admin-member-top h3{margin:0;color:var(--navy);font-size:20px}.admin-member-top small{color:var(--muted)}.admin-progress-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}.admin-progress-grid>div>div:first-child{display:flex;justify-content:space-between;margin-bottom:7px;color:var(--navy)}.admin-progress-grid strong{color:var(--gold)}.admin-current{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-top:15px;padding-top:12px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}.admin-current>span:first-child{font-weight:900;color:var(--navy);margin-left:2px}.detail-card{scroll-margin-top:20px}.detail-top{display:flex;justify-content:space-between;align-items:flex-start;gap:15px}.detail-top h2{margin:10px 0 0;color:var(--navy)}.member-detail-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}.member-detail-stat{background:#fbfaf6;border:1px solid var(--line);border-radius:16px;padding:14px}.member-detail-stat small{display:block;color:var(--muted);font-weight:800}.member-detail-stat b{display:block;font-size:28px;color:var(--navy);margin:4px 0 9px}.detail-switches{display:flex;gap:8px;margin:15px 0}.detail-two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}.detail-two-col>div{border-top:1px solid var(--line);padding-top:14px}.detail-two-col h3{color:var(--navy);margin:0 0 8px}.admin-week-list{max-height:500px;overflow:auto;border:1px solid var(--line);border-radius:14px}.admin-week-row{display:grid;grid-template-columns:90px 1fr auto;gap:9px;align-items:center;padding:10px 12px;border-bottom:1px solid var(--line);font-size:12px}.admin-week-row:last-child{border-bottom:0}.admin-week-row:nth-child(even){background:#fbfaf6}.week-no{font-weight:900;color:var(--navy)}.week-hespek{color:#76571f;font-weight:700}.empty{text-align:center;color:var(--muted);padding:30px}.small{height:10px}
+@media(max-width:700px){.admin-chart-grid,.admin-members,.detail-two-col{grid-template-columns:1fr}.admin-progress-grid{grid-template-columns:1fr}.member-detail-stats{grid-template-columns:1fr}.admin-member-top{flex-direction:column}.admin-member-top .outline{width:100%}.admin-week-row{grid-template-columns:75px 1fr auto}}
+.back-link{border:0;background:transparent;color:#0b3550;font-weight:800;font-size:.9rem;cursor:pointer;padding:8px 0}
+
+/* Kinyan Torah: independent masechet pages */
+body.theme-sanhedrin{--accent:#07396b;--accent2:#c8a34d;--surface-tint:#f5f0e5}
+body.theme-bava{--accent:#17665d;--accent2:#c8a34d;--surface-tint:#f1f7f4}
+body.theme-sanhedrin .section-hero, body.theme-bava .section-hero{border-top:4px solid var(--accent)}
+body.theme-sanhedrin .navbtn.active, body.theme-sanhedrin .switch.selected{background:#07396b!important;color:#fff!important}
+body.theme-bava .navbtn.active, body.theme-bava .switch.selected{background:#17665d!important;color:#fff!important}
+body.theme-sanhedrin .current-week, body.theme-sanhedrin .home-week-card{border-color:#c8a34d}
+body.theme-bava .current-week, body.theme-bava .home-week-card{border-color:#17665d}
+.masechet-link{display:inline-flex;align-items:center;text-decoration:none;padding:9px 12px;border:1px solid var(--accent,#07396b);border-radius:10px;font-weight:700;color:var(--accent,#07396b);background:#fff}
+.home-masechet-switch,.plan-switch-card,#tools .card .switches{display:none!important}
+#personal,.navbtn[data-view="personal"]{display:none!important}
+#cards [data-masechet],#cards .masechet-switch{display:none!important}
+
 </style><style>
-:root{--navy:#092844;--navy2:#123f63;--gold:#c79a3b;--gold2:#e4c36f;--cream:#f6f1e5;--paper:#fffdf8;--ink:#14283d;--muted:#708094;--line:#ded6c5;--green:#27804d;--red:#b53b3b;--orange:#d29625}body{background:radial-gradient(circle at 10% 0%,#e9f1f5 0,#f8f4ec 34%,#eee9df 100%)}.wrap{width:min(1180px,calc(100% - 28px));padding-bottom:112px}.top{padding:14px 0 8px;min-height:78px}.brand{display:flex;align-items:center;gap:13px;font-size:22px}.project-logo{width:112px;height:74px;object-fit:contain;filter:drop-shadow(0 5px 7px rgba(10,32,55,.14))}.brand-copy{display:flex;flex-direction:column;line-height:1.05}.brand-copy b{font-size:25px;color:var(--navy);font-weight:950}.brand-copy small{font-size:13px;color:var(--gold);font-weight:900;margin-top:6px}.hero-card{position:relative;overflow:hidden;min-height:260px;padding:36px 42% 34px 34px;background:linear-gradient(125deg,#061c31 0%,#103957 62%,#1b4d70 100%);border-radius:32px;border:1px solid rgba(199,154,59,.5);box-shadow:0 20px 50px rgba(8,31,52,.2)}.hero-card:after{content:"";position:absolute;right:2%;top:-12%;width:44%;height:124%;background:radial-gradient(circle,rgba(228,195,111,.23),transparent 62%);pointer-events:none}.hero-card .hero-kicker{background:#ead39a;color:#62491d;box-shadow:0 5px 15px rgba(0,0,0,.12)}.hero-card h1{font-size:0;margin:16px 0 8px;position:relative;z-index:1}.hero-card h1:after{content:"חוזרים יודעים";font-size:clamp(34px,5vw,58px);font-weight:950;letter-spacing:-1px;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.35);display:block}.hero-card p{font-size:0;position:relative;z-index:1;max-width:520px}.hero-card p:before{content:"הדרך לקנות את המסכת";font-size:clamp(19px,2.5vw,28px);font-weight:800;color:#e6c978;display:block;margin-top:8px}.hero-card:before{content:"";position:absolute;right:4%;top:8px;width:390px;height:255px;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20420%20280%22%3E%3Crect%20width%3D%22420%22%20height%3D%22280%22%20fill%3D%22none%22%2F%3E%3Cg%20font-family%3D%22Arial%2C%20sans-serif%22%20text-anchor%3D%22middle%22%3E%3Ctext%20x%3D%22210%22%20y%3D%2265%22%20font-size%3D%2254%22%20font-weight%3D%22900%22%20fill%3D%22%23f2d68c%22%3E%u05E7%u05E0%u05D9%u05DF%20%u05EA%u05D5%u05E8%u05D4%3C%2Ftext%3E%3Cpath%20d%3D%22M105%2092%20Q210%2075%20315%2092%20L300%20116%20Q210%20100%20120%20116Z%22%20fill%3D%22%23c79a3b%22%20stroke%3D%22%239b7323%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22210%22%20y%3D%22108%22%20font-size%3D%2225%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%3E%u05DB%u05D5%u05DC%u05DC%20%u05D1%u05E0%u05D9%20%u05E2%u05DC%u05D9%u05D9%u05D4%3C%2Ftext%3E%3Cpath%20d%3D%22M92%20205%20Q145%20175%20210%20190%20Q275%20175%20328%20205%20L308%20244%20Q210%20218%20112%20244Z%22%20fill%3D%22%23f4dfac%22%20stroke%3D%22%23b18431%22%20stroke-width%3D%225%22%2F%3E%3Cpath%20d%3D%22M112%20200%20Q155%20177%20210%20190%20L210%20220%20Q160%20205%20112%20224Z%22%20fill%3D%22%23fffaf0%22%20stroke%3D%22%23b18431%22%20stroke-width%3%22%2F%3E%3Cpath%20d%3D%22M308%20200%20Q265%20177%20210%20190%20L210%20220%20Q260%20205%20308%20224Z%22%20fill%3D%22%23fffaf0%22%20stroke%3D%22%23b18431%22%20stroke-width%3D%223%22%2F%3E%3Cpath%20d%3D%22M72%20135%20L95%20220%20M348%20135%20L325%20220%22%20stroke%3D%22%23c79a3b%22%20stroke-width%3D%2212%22%2F%3E%3Ccircle%20cx%3D%2270%22%20cy%3D%22130%22%20r%3D%2211%22%20fill%3D%22%23d9b55d%22%2F%3E%3Ccircle%20cx%3D%22350%22%20cy%3D%22130%22%20r%3D%2211%22%20fill%3D%22%23d9b55d%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-size:contain;background-repeat:no-repeat;background-position:center;z-index:0;opacity:.98;filter:drop-shadow(0 14px 18px rgba(0,0,0,.22))}.section-head{margin:26px 2px 12px}.section-head h2{font-size:27px}.card{border-radius:24px;background:rgba(255,253,248,.96);box-shadow:0 9px 30px rgba(12,35,55,.07);border-color:#ded7c9}.current-week{border-top:4px solid var(--gold);box-shadow:0 12px 34px rgba(12,35,55,.10)}.week-top .badge{background:#f2dfad}.week-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.week-subject{display:flex;justify-content:space-between;gap:10px;margin-top:15px;color:var(--gold);font-weight:900}.week-info-grid{background:linear-gradient(135deg,#0b2944,#164769)}.masechet-cards{grid-template-columns:1fr 1fr;gap:20px}.masechet-card{min-height:190px;position:relative;overflow:hidden;border-radius:25px;padding:28px;border:1px solid rgba(193,158,90,.28);box-shadow:0 12px 32px rgba(13,37,58,.08)}.masechet-card:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(135deg,transparent 48%,rgba(199,154,59,.08))}.masechet-card:nth-child(1){background:linear-gradient(120deg,#fffdf7,#efe0c3)}.masechet-card:nth-child(2){background:linear-gradient(120deg,#f7fbfd,#dceaf2)}.masechet-card h3{font-size:36px;position:relative;z-index:1}.gold-dot{background:#f1dfb5;border:1px solid #d8b96d}.switch.selected{background:linear-gradient(135deg,#0a2742,#17486c);border-color:#0a2742}.bar{background:#e8e0d1;height:15px}.bar i{background:linear-gradient(90deg,#b88326,#e2c36e)}.stat,.admin-stats>div{background:#fffdf8}.status{transition:.15s;box-shadow:0 2px 8px rgba(0,0,0,.04)}.status.chosen{background:#0a2742}.primary{background:linear-gradient(135deg,#071d32,#123c5f)}.secondary{background:linear-gradient(135deg,#fff4d6,#e5c67b)}nav{width:min(760px,calc(100% - 20px));height:78px;border-radius:26px;background:linear-gradient(135deg,#071d32,#123c5f);border-color:rgba(199,154,59,.35)}nav button{font-size:14px;transition:.15s}nav button.active{color:#f2d68c;background:rgba(199,154,59,.11);box-shadow:inset 0 -4px 0 var(--gold)}@media(max-width:800px){.project-logo{width:96px;height:66px}.home-masechet-actions{grid-template-columns:1fr}.hero-card{padding:250px 24px 28px;min-height:0}.hero-card:before{right:50%;transform:translateX(50%);top:4px;width:320px;height:230px}.masechet-cards,.week-grid{grid-template-columns:1fr}.masechet-card h3{font-size:31px}}@media(max-width:700px){.auth-grid,.admin-chart-grid,.admin-members,.detail-two-col{grid-template-columns:1fr}.stat-grid,.admin-stats{grid-template-columns:1fr 1fr}.hero-card h1:after{font-size:40px}.makeup{grid-template-columns:1fr auto}.makeup-buttons{grid-column:1/-1}.top-actions{display:none}.admin-progress-grid{grid-template-columns:1fr}.member-detail-stats{grid-template-columns:1fr}.admin-member-top{flex-direction:column}.admin-member-top .outline{width:100%}.admin-week-row{grid-template-columns:75px 1fr auto}}@media(max-width:450px){.wrap{width:min(100% - 16px,1000px)}.card{padding:18px}.status{min-width:100px}.project-logo{width:67px;height:46px}.brand-copy b{font-size:20px}.hero-card{padding-top:220px}.hero-card h1:after{font-size:34px}.hero-card p:before{font-size:19px}.week-grid{grid-template-columns:1fr}.week-info-grid{grid-template-columns:1fr}.week-info-grid>div+div{border-right:0;border-top:1px solid rgba(255,255,255,.15)}}</style></head><body><div class="wrap"><header class="top"><div class="brand"><img class="project-logo" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20420%20280%22%3E%3Crect%20width%3D%22420%22%20height%3D%22280%22%20fill%3D%22none%22%2F%3E%3Cg%20font-family%3D%22Arial%2C%20sans-serif%22%20text-anchor%3D%22middle%22%3E%3Ctext%20x%3D%22210%22%20y%3D%2265%22%20font-size%3D%2254%22%20font-weight%3D%22900%22%20fill%3D%22%230b3a63%22%3E%u05E7%u05E0%u05D9%u05DF%20%u05EA%u05D5%u05E8%u05D4%3C%2Ftext%3E%3Cpath%20d%3D%22M105%2092%20Q210%2075%20315%2092%20L300%20116%20Q210%20100%20120%20116Z%22%20fill%3D%22%23c79a3b%22%20stroke%3D%22%239b7323%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22210%22%20y%3D%22108%22%20font-size%3D%2225%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%3E%u05DB%u05D5%u05DC%u05DC%20%u05D1%u05E0%u05D9%20%u05E2%u05DC%u05D9%u05D9%u05D4%3C%2Ftext%3E%3Cpath%20d%3D%22M92%20205%20Q145%20175%20210%20190%20Q275%20175%20328%20205%20L308%20244%20Q210%20218%20112%20244Z%22%20fill%3D%22%23f4dfac%22%20stroke%3D%22%23b18431%22%20stroke-width%3D%225%22%2F%3E%3Cpath%20d%3D%22M112%20200%20Q155%20177%20210%20190%20L210%20220%20Q160%20205%20112%20224Z%22%20fill%3D%22%23fffaf0%22%20stroke%3D%22%23b18431%22%20stroke-width%3D%223%22%2F%3E%3Cpath%20d%3D%22M308%20200%20Q265%20177%20210%20190%20L210%20220%20Q260%20205%20308%20224Z%22%20fill%3D%22%23fffaf0%22%20stroke%3D%22%23b18431%22%20stroke-width%3D%223%22%2F%3E%3Cpath%20d%3D%22M72%20135%20L95%20220%20M348%20135%20L325%20220%22%20stroke%3D%22%23c79a3b%22%20stroke-width%3D%2212%22%2F%3E%3Ccircle%20cx%3D%2270%22%20cy%3D%22130%22%20r%3D%2211%22%20fill%3D%22%23d9b55d%22%2F%3E%3Ccircle%20cx%3D%22350%22%20cy%3D%22130%22%20r%3D%2211%22%20fill%3D%22%23d9b55d%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="קנין תורה — כולל בני עלייה"><div class="brand-copy"><b>קנין תורה</b><small>חוזרים יודעים</small></div></div><div class="top-actions"><button class="outline" onclick="go('home')">ראשי</button></div></header><main><section id="home" class="view active"></section><section id="plan" class="view"></section><section id="personal" class="view"></section><section id="admin" class="view"></section></main></div><nav><button class="navbtn active" data-view="home">⌂<br>ראשי</button><button class="navbtn" data-view="plan">▤<br>תכנית</button><button class="navbtn" data-view="personal">♙<br>אישי</button><button class="navbtn hidden" id="adminNav" data-view="admin">⚙<br>ניהול</button></nav><script src="data.js?v=20261013-2"></script><script src="app.js?v=20261013-2"></script></body></html>
+:root{--navy:#092844;--navy2:#123f63;--gold:#c79a3b;--gold2:#e4c36f;--cream:#f6f1e5;--paper:#fffdf8;--ink:#14283d;--muted:#708094;--line:#ded6c5;--green:#27804d;--red:#b53b3b;--orange:#d29625}
+body{background:radial-gradient(circle at 10% 0%,#e9f1f5 0,#f8f4ec 34%,#eee9df 100%)}
+.wrap{width:min(1180px,calc(100% - 28px));padding-bottom:112px}
+.top{padding:14px 0 8px;min-height:78px}.brand{display:flex;align-items:center;gap:13px;font-size:22px}.project-logo{width:82px;height:54px;object-fit:contain;filter:drop-shadow(0 5px 7px rgba(10,32,55,.14))}.brand-copy{display:flex;flex-direction:column;line-height:1.05}.brand-copy b{font-size:25px;color:var(--navy);font-weight:950}.brand-copy small{font-size:13px;color:var(--gold);font-weight:900;margin-top:6px}
+.hero-card{position:relative;overflow:hidden;min-height:260px;padding:36px 42% 34px 34px;background:linear-gradient(125deg,#061c31 0%,#103957 62%,#1b4d70 100%);border-radius:32px;border:1px solid rgba(199,154,59,.5);box-shadow:0 20px 50px rgba(8,31,52,.2)}
+.hero-card:after{content:"";position:absolute;right:2%;top:-12%;width:44%;height:124%;background:radial-gradient(circle,rgba(228,195,111,.23),transparent 62%);pointer-events:none}.hero-card .hero-kicker{background:#ead39a;color:#62491d;box-shadow:0 5px 15px rgba(0,0,0,.12)}
+.hero-card h1{font-size:0;margin:16px 0 8px;position:relative;z-index:1}.hero-card h1:after{content:"חוזרים יודעים";font-size:clamp(34px,5vw,58px);font-weight:950;letter-spacing:-1px;color:#fff;display:block}.hero-card p{font-size:0;position:relative;z-index:1;max-width:520px}.hero-card p:before{content:"הדרך לקנות את המסכת";font-size:clamp(19px,2.5vw,28px);font-weight:800;color:#e6c978;display:block;margin-top:8px}
+.hero-card:before{content:"";position:absolute;right:7%;top:18px;width:330px;height:220px;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20420%20280%22%3E%3Crect%20width%3D%22420%22%20height%3D%22280%22%20fill%3D%22none%22%2F%3E%3Cg%20font-family%3D%22Arial%2C%20sans-serif%22%20text-anchor%3D%22middle%22%3E%3Ctext%20x%3D%22210%22%20y%3D%2265%22%20font-size%3D%2254%22%20font-weight%3D%22900%22%20fill%3D%22%230b3a63%22%3E%D7%A7%D7%A0%D7%99%D7%9F%20%D7%AA%D7%95%D7%A8%D7%94%3C%2Ftext%3E%3Cpath%20d%3D%22M105%2092%20Q210%2075%20315%2092%20L300%20116%20Q210%20100%20120%20116Z%22%20fill%3D%22%23c79a3b%22%20stroke%3D%22%239b7323%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22210%22%20y%3D%22108%22%20font-size%3D%2225%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%3E%D7%9B%D7%95%D7%9C%D7%9C%20%D7%91%D7%A0%D7%99%20%D7%A2%D7%9C%D7%99%D7%99%D7%94%3C%2Ftext%3E%3Cpath%20d%3D%22M92%20205%20Q145%20175%20210%20190%20Q275%20175%20328%20205%20L308%20244%20Q210%20218%20112%20244Z%22%20fill%3D%22%23f4dfac%22%20stroke%3D%22%23b18431%22%20stroke-width%3D%225%22%2F%3E%3Cpath%20d%3D%22M112%20200%20Q155%20177%20210%20190%20L210%20220%20Q160%20205%20112%20224Z%22%20fill%3D%22%23fffaf0%22%20stroke%3D%22%23b18431%22%20stroke-width%3D%223%22%2F%3E%3Cpath%20d%3D%22M308%20200%20Q265%20177%20210%20190%20L210%20220%20Q260%20205%20308%20224Z%22%20fill%3D%22%23fffaf0%22%20stroke%3D%22%23b18431%22%20stroke-width%3D%223%22%2F%3E%3Cpath%20d%3D%22M72%20135%20L95%20220%20M348%20135%20L325%20220%22%20stroke%3D%22%23c79a3b%22%20stroke-width%3D%2212%22%2F%3E%3Ccircle%20cx%3D%2270%22%20cy%3D%22130%22%20r%3D%2211%22%20fill%3D%22%23d9b55d%22%2F%3E%3Ccircle%20cx%3D%22350%22%20cy%3D%22130%22%20r%3D%2211%22%20fill%3D%22%23d9b55d%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-size:contain;background-repeat:no-repeat;background-position:center;z-index:0;opacity:.98;filter:drop-shadow(0 14px 18px rgba(0,0,0,.22))}
+.section-head{margin:26px 2px 12px}.section-head h2{font-size:27px}.card{border-radius:24px;background:rgba(255,253,248,.96);box-shadow:0 9px 30px rgba(12,35,55,.07);border-color:#ded7c9}.current-week{border-top:4px solid var(--gold);box-shadow:0 12px 34px rgba(12,35,55,.10)}.week-top .badge{background:#f2dfad}.week-info-grid{background:linear-gradient(135deg,#0b2944,#164769)}
+.masechet-cards{grid-template-columns:1fr 1fr;gap:20px}.masechet-card{min-height:190px;position:relative;overflow:hidden;border-radius:25px;padding:28px;border:1px solid rgba(193,158,90,.28);box-shadow:0 12px 32px rgba(13,37,58,.08)}.masechet-card:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(135deg,transparent 48%,rgba(199,154,59,.08))}.masechet-card:nth-child(1){background:linear-gradient(120deg,#fffdf7,#efe0c3)}.masechet-card:nth-child(2){background:linear-gradient(120deg,#f7fbfd,#dceaf2)}.masechet-card h3{font-size:36px;position:relative;z-index:1}.gold-dot{background:#f1dfb5;border:1px solid #d8b96d}.switch.selected{background:linear-gradient(135deg,#0a2742,#17486c);border-color:#0a2742}.bar{background:#e8e0d1;height:15px}.bar i{background:linear-gradient(90deg,#b88326,#e2c36e)}.stat,.admin-stats>div{background:#fffdf8}.status{transition:.15s;box-shadow:0 2px 8px rgba(0,0,0,.04)}.status.chosen{background:#0a2742}.primary{background:linear-gradient(135deg,#071d32,#123c5f)}.secondary{background:linear-gradient(135deg,#fff4d6,#e5c67b)}
+nav{width:min(760px,calc(100% - 20px));height:78px;border-radius:26px;background:linear-gradient(135deg,#071d32,#123c5f);border-color:rgba(199,154,59,.35)}nav button{font-size:14px;transition:.15s}nav button.active{color:#f2d68c;background:rgba(199,154,59,.11);box-shadow:inset 0 -4px 0 var(--gold)}
+@media(max-width:800px){.hero-card{padding:250px 24px 28px;min-height:0}.hero-card:before{right:50%;transform:translateX(50%);top:10px;width:280px;height:210px}.masechet-cards{grid-template-columns:1fr}.masechet-card h3{font-size:31px}}
+@media(max-width:450px){.project-logo{width:67px;height:46px}.brand-copy b{font-size:20px}.hero-card{padding-top:220px}.hero-card h1:after{font-size:34px}.hero-card p:before{font-size:19px}}
+</style>
+<style id="final-logo-design">
+.project-logo{width:82px!important;height:58px!important;object-fit:contain!important}
+.hero-card{position:relative!important;min-height:430px!important;padding:270px 24px 40px!important;text-align:center!important;overflow:hidden!important}
+.hero-card:before{
+content:""!important;position:absolute!important;top:18px!important;right:50%!important;
+transform:translateX(50%)!important;width:300px!important;height:235px!important;
+background:url("assets/kinyan-logo.png") center/contain no-repeat!important;z-index:1!important;
+}
+.hero-card:after{content:none!important;display:none!important}
+.hero-card h1{position:relative!important;z-index:2!important;font-size:40px!important;margin:12px 0 8px!important}
+.hero-card h1:after{content:none!important;display:none!important}
+.hero-card p{position:relative!important;z-index:2!important;font-size:24px!important;color:#e6c978!important;margin:0!important}
+.hero-card p:before{content:none!important;display:none!important}
+.hero-card .hero-kicker{position:relative!important;z-index:2!important;margin-bottom:10px!important}
+@media(max-width:450px){
+.project-logo{width:68px!important;height:48px!important}
+.hero-card{min-height:410px!important;padding:245px 18px 34px!important}
+.hero-card:before{width:275px!important;height:215px!important}
+.hero-card h1{font-size:35px!important}
+.hero-card p{font-size:20px!important}
+}
+</style>
+
+<style id="premium-ui-v2">
+:root{
+  --navy:#092b46;
+  --navy2:#123f5d;
+  --gold:#c7a044;
+  --gold2:#ecd58b;
+  --cream:#fbfaf6;
+  --ink:#102f48;
+  --muted:#81909d;
+  --line:#e6e0d4;
+  --soft:#f4f0e6;
+}
+html{scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(circle at 10% 0%,rgba(210,225,234,.5),transparent 34%),
+    linear-gradient(180deg,#eef4f7 0%,#f7f4ed 48%,#f2efe7 100%) !important;
+  padding-bottom:105px !important;
+}
+main.wrap{padding-bottom:34px !important}
+.top{
+  min-height:78px !important;
+  padding:9px 18px !important;
+  background:rgba(242,247,249,.96) !important;
+  border-bottom:1px solid #dce5ea !important;
+  box-shadow:0 3px 18px rgba(20,52,72,.05) !important;
+  position:sticky !important;
+  top:0 !important;
+  z-index:25 !important;
+}
+.project-logo{width:76px!important;height:56px!important;object-fit:contain!important}
+.brand-copy b{font-size:27px!important;letter-spacing:-.4px!important}
+.brand-copy small{font-size:15px!important;letter-spacing:3.5px!important;margin-top:6px!important;color:var(--gold)!important}
+.hero-card{
+  min-height:355px !important;
+  margin:18px 0 30px !important;
+  border-radius:30px !important;
+  padding:215px 24px 30px !important;
+  background:linear-gradient(135deg,#082946 0%,#104363 62%,#23566b 100%) !important;
+  box-shadow:0 22px 45px rgba(13,43,62,.17) !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-end !important;
+  text-align:center !important;
+}
+.hero-card:before{
+  content:""!important;
+  position:absolute!important;
+  top:17px!important;
+  left:50%!important;
+  width:250px!important;
+  height:185px!important;
+  transform:translateX(-50%)!important;
+  background:url("assets/kinyan-logo.png") center/contain no-repeat!important;
+  z-index:1!important;
+  opacity:1!important;
+  filter:drop-shadow(0 9px 12px rgba(0,0,0,.15))!important;
+}
+.hero-card:after{content:none!important;display:none!important}
+.hero-card .hero-kicker{
+  position:relative!important;
+  z-index:3!important;
+  order:1!important;
+  margin:0 0 13px!important;
+  padding:9px 22px!important;
+  border-radius:999px!important;
+  background:linear-gradient(180deg,#f4db8b,#e8c969)!important;
+  color:#725b26!important;
+  font-size:17px!important;
+  font-weight:800!important;
+  box-shadow:0 4px 12px rgba(0,0,0,.09)!important;
+}
+.hero-card h1{
+  position:relative!important;
+  z-index:3!important;
+  order:2!important;
+  margin:0!important;
+  color:#fff!important;
+  font-size:42px!important;
+  line-height:1.05!important;
+  letter-spacing:-1px!important;
+}
+.hero-card .hero-subtitle{
+  position:relative!important;
+  z-index:3!important;
+  order:3!important;
+  margin:9px 0 0!important;
+  color:#f1d273!important;
+  font-size:23px!important;
+  font-weight:800!important;
+}
+.hero-card .hero-description{
+  position:relative!important;
+  z-index:3!important;
+  order:4!important;
+  margin:8px 0 0!important;
+  color:rgba(255,255,255,.62)!important;
+  font-size:14px!important;
+}
+.section-head{
+  margin:24px 4px 14px !important;
+  align-items:end !important;
+}
+.section-head h2{font-size:31px!important;margin:0!important;color:var(--ink)!important}
+.section-head p{font-size:16px!important;line-height:1.5!important;margin-top:4px!important}
+.outline{
+  border:1px solid #ded8ca!important;
+  background:#fffdf9!important;
+  box-shadow:0 5px 14px rgba(25,45,58,.05)!important;
+}
+.week-grid{gap:14px!important}
+.current-week{
+  padding:20px 19px 18px!important;
+  border-top:5px solid var(--gold)!important;
+  border-radius:25px!important;
+  background:#fffdfa!important;
+  box-shadow:0 12px 30px rgba(29,49,61,.08)!important;
+}
+.current-week .week-top strong{font-size:20px!important;color:var(--ink)!important}
+.current-week .badge{
+  background:#f2dfa4!important;
+  color:#745d27!important;
+  border:0!important;
+  font-size:13px!important;
+}
+.current-week .week-subject{margin:10px 0 8px!important;font-size:16px!important}
+.current-week h2{
+  font-size:30px!important;
+  line-height:1.2!important;
+  margin:5px 0 8px!important;
+  color:var(--ink)!important;
+}
+.current-week .week-meta{font-size:14px!important;color:#8a949d!important}
+.masechet-cards{gap:14px!important}
+.masechet-card{
+  min-height:170px!important;
+  border-radius:25px!important;
+  padding:24px!important;
+  background:linear-gradient(145deg,#fffdf8,#f4e8c9)!important;
+  box-shadow:0 10px 26px rgba(35,48,56,.07)!important;
+  border:1px solid #eadfca!important;
+}
+.masechet-card:nth-child(2){background:linear-gradient(145deg,#f9fcfd,#eaf2f5)!important;border-color:#dce7eb!important}
+.masechet-card h3{font-size:30px!important;color:var(--ink)!important}
+.masechet-card .card-link{font-size:16px!important;font-weight:800!important;margin-top:18px!important}
+.gold-dot{
+  width:42px!important;height:42px!important;
+  display:grid!important;place-items:center!important;
+  border-radius:13px!important;
+  background:#f3e3ae!important;
+  border:1px solid #e0c879!important;
+  color:#8b6d22!important;
+}
+
+/* Shared cards */
+.card{
+  border-radius:25px!important;
+  border:1px solid var(--line)!important;
+  background:rgba(255,253,249,.94)!important;
+  box-shadow:0 10px 28px rgba(28,46,56,.06)!important;
+}
+.section-hero{
+  border-radius:29px!important;
+  padding:27px 22px!important;
+  background:linear-gradient(135deg,#082b47,#174762)!important;
+  box-shadow:0 16px 34px rgba(10,43,65,.13)!important;
+}
+.section-hero span{
+  display:inline-block!important;
+  background:#f2dda0!important;
+  color:#705a27!important;
+  border-radius:999px!important;
+  padding:7px 18px!important;
+  font-weight:800!important;
+}
+.section-hero h2{color:#fff!important;font-size:39px!important;margin:13px 0 5px!important}
+.section-hero p{color:rgba(255,255,255,.72)!important;margin:0!important;font-size:16px!important}
+
+/* Personal */
+.stats-grid,.stat-grid{
+  display:grid!important;
+  grid-template-columns:repeat(3,1fr)!important;
+  gap:10px!important;
+  margin:12px 0!important;
+}
+.stat-card{
+  padding:17px 10px!important;
+  text-align:center!important;
+  border-radius:20px!important;
+  background:#fffdf9!important;
+  border:1px solid var(--line)!important;
+  box-shadow:0 7px 18px rgba(30,48,58,.05)!important;
+}
+.stat-card span{display:block!important;color:#7f8b94!important;font-size:13px!important;margin-bottom:7px!important}
+.stat-card b{font-size:27px!important;color:var(--ink)!important}
+.personal-week{gap:18px!important}
+.status-buttons{
+  display:grid!important;
+  grid-template-columns:repeat(3,1fr)!important;
+  gap:8px!important;
+}
+.status-btn{
+  min-height:48px!important;
+  border-radius:14px!important;
+  border:1px solid #ddd6c8!important;
+  font-size:14px!important;
+  font-weight:800!important;
+  background:#fff!important;
+}
+.status-btn.completed{color:#32734e!important;background:#eef8f1!important;border-color:#cbe4d2!important}
+.status-btn.partial{color:#8a6721!important;background:#fff8df!important;border-color:#ead79c!important}
+.status-btn.not_started{color:#9c4c4c!important;background:#fff0f0!important;border-color:#ebcccc!important}
+
+/* Progress */
+.big-percent{font-size:62px!important;line-height:1!important;font-weight:900!important;color:var(--navy)!important;text-align:center!important;margin:7px 0 10px!important}
+.bar{height:11px!important;border-radius:999px!important;background:#e9e2d3!important;overflow:hidden!important}
+.bar i{display:block!important;height:100%!important;border-radius:999px!important;background:linear-gradient(90deg,#c39b38,#e6ca76)!important}
+.perek-line{padding:15px 0!important;border-bottom:1px solid #ebe5da!important}
+.perek-line:last-child{border-bottom:0!important}
+.perek-line>div:first-child{display:flex!important;justify-content:space-between!important;gap:12px!important}
+.perek-line b{font-size:17px!important;color:var(--ink)!important}
+.perek-line span{font-weight:900!important;color:var(--gold)!important}
+.perek-line small{display:block!important;color:#8b959d!important;margin-top:6px!important}
+
+/* Plan table */
+.table-card{overflow:hidden!important}
+.table-scroll{overflow-x:auto!important}
+table{border-collapse:separate!important;border-spacing:0!important;width:100%!important}
+thead th{
+  background:#f3efe6!important;
+  color:#695f4f!important;
+  font-weight:800!important;
+  padding:13px 10px!important;
+  border-bottom:1px solid #e3dccd!important;
+}
+tbody td{padding:12px 10px!important;border-bottom:1px solid #eee8de!important}
+tbody tr.current-row td{background:#fff7df!important;font-weight:700!important}
+tbody tr.current-row td:first-child{border-right:4px solid var(--gold)!important}
+
+/* Auth */
+.auth-card{padding:22px!important}
+.auth-grid{gap:18px!important}
+.auth-grid>div,.signup{padding:20px!important;border-radius:20px!important;background:#fbf7ed!important;border:1px solid #ebe2d0!important}
+input{
+  min-height:52px!important;
+  border-radius:15px!important;
+  border:1px solid #ddd8cf!important;
+  background:#fff!important;
+  font-size:17px!important;
+  padding:0 15px!important;
+}
+.primary,.secondary{min-height:52px!important;border-radius:15px!important;font-size:17px!important;font-weight:900!important}
+.primary{background:linear-gradient(135deg,#082b47,#164866)!important}
+.secondary{background:linear-gradient(135deg,#f5df9f,#e6c66d)!important;color:#6d5725!important}
+
+/* Bottom navigation */
+nav{
+  bottom:max(9px,env(safe-area-inset-bottom))!important;
+  height:76px!important;
+  border-radius:26px!important;
+  width:min(680px,calc(100% - 24px))!important;
+  box-shadow:0 18px 40px rgba(4,25,42,.25)!important;
+}
+nav button{font-size:13px!important}
+nav button.active{box-shadow:inset 0 -4px 0 var(--gold)!important}
+
+/* Avoid content disappearing under fixed nav */
+.view{padding-bottom:18px!important}
+
+@media(max-width:700px){
+  .stats-grid,.stat-grid{grid-template-columns:repeat(3,1fr)!important}
+  .personal-week{display:block!important}
+  .status-buttons{margin-top:18px!important}
+  .section-hero h2{font-size:34px!important}
+}
+@media(max-width:480px){
+  .top{min-height:72px!important;padding:8px 15px!important}
+  .project-logo{width:69px!important;height:50px!important}
+  .brand-copy b{font-size:24px!important}
+  .brand-copy small{font-size:13px!important;letter-spacing:3px!important}
+  .hero-card{
+    min-height:350px!important;
+    padding:205px 17px 28px!important;
+    border-radius:28px!important;
+  }
+  .hero-card:before{width:225px!important;height:170px!important;top:14px!important}
+  .hero-card .hero-kicker{font-size:15px!important;padding:8px 19px!important;margin-bottom:10px!important}
+  .hero-card h1{font-size:38px!important}
+  .hero-card .hero-subtitle{font-size:21px!important}
+  .hero-card .hero-description{font-size:12px!important}
+  .section-head h2{font-size:29px!important}
+  .section-head p{font-size:15px!important}
+  .current-week h2{font-size:27px!important}
+  .masechet-card h3{font-size:27px!important}
+  .section-hero h2{font-size:32px!important}
+  .stats-grid,.stat-grid{gap:7px!important}
+  .stat-card{padding:14px 5px!important}
+  .stat-card span{font-size:11px!important}
+  .stat-card b{font-size:24px!important}
+  .status-buttons{gap:6px!important}
+  .status-btn{min-height:45px!important;font-size:12px!important;padding:0 4px!important}
+  nav{height:72px!important;width:calc(100% - 20px)!important;border-radius:25px!important}
+}
+</style>
+
+
+<style id="final-v2">
+/* Logo: clear cream plate so the original artwork remains legible on navy */
+.hero-card:before{
+  content:""!important;
+  position:absolute!important;
+  top:18px!important;
+  left:50%!important;
+  transform:translateX(-50%)!important;
+  width:218px!important;
+  height:178px!important;
+  border-radius:24px!important;
+  background:#fbf7e9 url("assets/kinyan-logo.png") center/190px auto no-repeat!important;
+  border:1px solid rgba(199,160,68,.34)!important;
+  box-shadow:0 12px 25px rgba(0,0,0,.14)!important;
+  z-index:1!important;
+}
+.hero-card{
+  min-height:350px!important;
+  padding-top:208px!important;
+}
+.hero-card h1{font-size:40px!important}
+.hero-card .hero-subtitle{font-size:21px!important}
+.hero-card .hero-description{display:none!important}
+
+/* Program: compact weekly navigator instead of a long table */
+#plan .table-card{
+  display:none!important;
+}
+#plan .plan-compact{
+  display:block!important;
+}
+.plan-compact{
+  margin-top:14px;
+}
+.plan-picker{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:12px;
+}
+.plan-picker button{
+  width:46px;height:46px;border-radius:14px;
+  border:1px solid #ded6c7;background:#fffdf9;
+  color:#123a55;font-size:25px;font-weight:800;
+}
+.plan-week-card{
+  background:#fffdf9;
+  border:1px solid #e6dfd2;
+  border-top:5px solid #c7a044;
+  border-radius:25px;
+  padding:20px 18px;
+  box-shadow:0 10px 26px rgba(25,46,58,.07);
+}
+.plan-week-card .pw-label{
+  display:inline-block;background:#f2dfa4;color:#725b25;
+  border-radius:999px;padding:7px 15px;font-size:13px;font-weight:800;
+}
+.plan-week-card h3{
+  color:#102f48;font-size:28px;margin:12px 0 5px;
+}
+.plan-week-card .pw-dates{
+  color:#7f8b95;font-size:15px;margin:0 0 10px;
+}
+.plan-week-card .pw-parsha{
+  color:#8b6c27;font-weight:800;font-size:15px;margin-bottom:15px;
+}
+.plan-week-card .pw-dapim{
+  color:#102f48;font-size:26px;font-weight:900;
+}
+.plan-week-card .pw-status{
+  margin-top:15px;padding-top:13px;border-top:1px solid #eee8de;
+  color:#8a949d;font-size:13px;
+}
+.plan-more{
+  margin-top:12px;width:100%;min-height:48px;border-radius:15px;
+  border:1px solid #ddd5c6;background:#f8f3e7;color:#6e5925;
+  font-weight:900;font-size:15px;
+}
+.plan-all{
+  display:none;margin-top:12px;background:#fffdf9;
+  border:1px solid #e5ded1;border-radius:20px;overflow:hidden;
+}
+.plan-all.open{display:block}
+.plan-all-row{
+  display:grid;grid-template-columns:64px 1fr 80px;
+  gap:8px;padding:11px 12px;border-bottom:1px solid #eee8de;
+  align-items:center;font-size:13px;
+}
+.plan-all-row:last-child{border-bottom:0}
+.plan-all-row.current{background:#fff5d9;font-weight:800}
+.plan-all-row b{color:#123a55}
+.plan-all-row span{color:#7f8991}
+.plan-all-row strong{color:#8b6c27;text-align:left}
+
+/* Keep the navigation from covering the final content */
+main.wrap{padding-bottom:92px!important}
+@media(max-width:480px){
+  .hero-card{min-height:340px!important;padding:198px 16px 27px!important}
+  .hero-card:before{
+    width:196px!important;height:160px!important;
+    background-size:172px auto!important;
+    top:15px!important;border-radius:21px!important;
+  }
+  .hero-card h1{font-size:37px!important}
+  .hero-card .hero-subtitle{font-size:20px!important}
+  .plan-week-card h3{font-size:25px!important}
+  .plan-week-card .pw-dapim{font-size:24px!important}
+}
+</style>
+
+<style id="plan-v3-fix">
+/* Correct logo centering: the original logo stays intact */
+.hero-card:before{
+  left:50% !important;
+  right:auto !important;
+  transform:translateX(-50%) !important;
+}
+.hero-card{
+  align-items:center !important;
+}
+.plan-current{
+  margin-top:14px !important;
+  padding:20px !important;
+  border-top:5px solid #c7a044 !important;
+}
+.plan-current-head{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:12px!important;
+}
+.current-badge{
+  background:#f2dfa4!important;
+  color:#725b25!important;
+  border-radius:999px!important;
+  padding:8px 15px!important;
+  font-size:13px!important;
+  font-weight:800!important;
+}
+.plan-current-head strong{
+  color:#102f48!important;
+  font-size:20px!important;
+}
+.plan-current-parsha{
+  color:#102f48!important;
+  font-size:18px!important;
+  font-weight:800!important;
+  margin-top:15px!important;
+}
+.plan-current-dates{
+  color:#89939b!important;
+  font-size:14px!important;
+  margin-top:5px!important;
+}
+.plan-current-dapim{
+  color:#102f48!important;
+  font-size:29px!important;
+  font-weight:900!important;
+  margin-top:12px!important;
+}
+.plan-current-perek{
+  color:#6e7c87!important;
+  font-size:15px!important;
+  margin-top:5px!important;
+}
+.plan-current-days{
+  color:#9a7a2b!important;
+  font-size:13px!important;
+  margin-top:7px!important;
+}
+.plan-current-nav{
+  display:grid!important;
+  grid-template-columns:1fr auto 1fr!important;
+  align-items:center!important;
+  gap:8px!important;
+  margin-top:18px!important;
+  padding-top:14px!important;
+  border-top:1px solid #eee7dc!important;
+}
+.plan-current-nav button{
+  min-height:42px!important;
+  border-radius:13px!important;
+  border:1px solid #ddd6c8!important;
+  background:#fff!important;
+  color:#123a55!important;
+  font-weight:800!important;
+}
+.plan-current-nav button:last-child{text-align:right!important}
+.plan-current-nav button:disabled{opacity:.35!important}
+.plan-current-nav span{
+  color:#89939b!important;
+  font-size:13px!important;
+}
+.plan-all-wrap{
+  margin-top:14px!important;
+  padding:18px!important;
+}
+.plan-all-head{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:14px!important;
+}
+.plan-all-head h3{margin:0!important;color:#102f48!important;font-size:24px!important}
+.plan-all-head p{margin:4px 0 0!important;color:#89939b!important;font-size:13px!important}
+.plan-more{
+  min-height:43px!important;
+  padding:0 14px!important;
+  border-radius:13px!important;
+  border:1px solid #ddcfab!important;
+  background:#faf3df!important;
+  color:#725b25!important;
+  font-weight:900!important;
+  white-space:nowrap!important;
+}
+.plan-table-container{margin-top:15px!important}
+.plan-table-container table{font-size:13px!important}
+.plan-table-container th{white-space:nowrap!important}
+.plan-table-container td{vertical-align:top!important}
+@media(max-width:480px){
+  .hero-card:before{
+    width:225px!important;
+    height:175px!important;
+    top:14px!important;
+  }
+  .hero-card{padding-top:205px!important}
+  .plan-current-dapim{font-size:25px!important}
+  .plan-current-nav button{font-size:11px!important;padding:0 6px!important}
+  .plan-all-head{display:block!important}
+  .plan-more{margin-top:10px!important;width:100%!important}
+}
+</style>
+
+<style id="bene-aliyah-hero">
+.hero-card{
+  position:relative!important;
+  min-height:390px!important;
+  padding:218px 22px 34px!important;
+  overflow:hidden!important;
+  background:
+    radial-gradient(circle at 50% 20%,rgba(199,160,68,.12),transparent 33%),
+    linear-gradient(135deg,#072844 0%,#0d3d5a 62%,#20566b 100%)!important;
+}
+.hero-card:before{
+  content:""!important;
+  position:absolute!important;
+  top:12px!important;
+  left:50%!important;
+  right:auto!important;
+  transform:translateX(-50%)!important;
+  width:285px!important;
+  height:188px!important;
+  background:url("assets/kinyan-hero.png") center/contain no-repeat!important;
+  z-index:1!important;
+  opacity:1!important;
+  filter:drop-shadow(0 8px 13px rgba(0,0,0,.22))!important;
+}
+.hero-card:after{
+  content:""!important;
+  display:none!important;
+}
+.hero-card .hero-kicker,
+.hero-card h1,
+.hero-card .hero-subtitle{
+  position:relative!important;
+  z-index:3!important;
+}
+.hero-card .hero-kicker{
+  margin-bottom:12px!important;
+  background:linear-gradient(180deg,#f5dda0,#e6c66d)!important;
+  color:#715923!important;
+}
+.hero-card h1{
+  font-size:43px!important;
+  line-height:1.05!important;
+  text-shadow:0 2px 12px rgba(0,0,0,.12)!important;
+}
+.hero-card .hero-subtitle{
+  color:#f1d273!important;
+  font-size:22px!important;
+  font-weight:800!important;
+  margin-top:9px!important;
+}
+@media(max-width:480px){
+  .hero-card{
+    min-height:365px!important;
+    padding:202px 17px 28px!important;
+  }
+  .hero-card:before{
+    width:260px!important;
+    height:175px!important;
+    top:8px!important;
+  }
+  .hero-card h1{font-size:38px!important}
+  .hero-card .hero-subtitle{font-size:20px!important}
+}
+</style>
+
+
+
+
+<style id="hero-corrected">
+/* Clean, shorter hero: logo as institutional signature, project name as the hero */
+.hero-card{
+  position:relative!important;
+  min-height:350px!important;
+  margin:18px 0 28px!important;
+  padding:184px 20px 30px!important;
+  overflow:hidden!important;
+  border-radius:30px!important;
+  background:
+    radial-gradient(circle at 50% 12%,rgba(199,160,68,.12),transparent 31%),
+    linear-gradient(135deg,#062640 0%,#0d3b58 58%,#1f566b 100%)!important;
+  box-shadow:0 20px 42px rgba(8,35,52,.16)!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  text-align:center!important;
+}
+.hero-card:before{
+  content:""!important;
+  position:absolute!important;
+  top:12px!important;
+  left:50%!important;
+  right:auto!important;
+  transform:translateX(-50%)!important;
+  width:220px!important;
+  height:150px!important;
+  background:url("assets/kinyan-logo.png") center/contain no-repeat!important;
+  z-index:2!important;
+  filter:drop-shadow(0 7px 13px rgba(0,0,0,.23))!important;
+}
+.hero-card:after{
+  content:""!important;
+  position:absolute!important;
+  top:168px!important;
+  left:16%!important;
+  right:16%!important;
+  height:1px!important;
+  background:linear-gradient(90deg,transparent,rgba(231,198,105,.55),transparent)!important;
+}
+.hero-card .hero-kicker{
+  position:relative!important;
+  z-index:3!important;
+  margin:0 0 9px!important;
+  padding:7px 20px!important;
+  border-radius:999px!important;
+  background:linear-gradient(180deg,#f4dda0,#e4c56a)!important;
+  color:#715924!important;
+  font-size:14px!important;
+  font-weight:900!important;
+}
+.hero-card h1{
+  position:relative!important;
+  z-index:3!important;
+  margin:0!important;
+  color:#fff!important;
+  font-size:42px!important;
+  line-height:1.05!important;
+  font-weight:900!important;
+  letter-spacing:-.6px!important;
+}
+.hero-card h1:before{
+  content:""!important;
+  display:none!important;
+}
+.hero-card .hero-subtitle{
+  position:relative!important;
+  z-index:3!important;
+  margin:8px 0 0!important;
+  color:#f0d277!important;
+  font-size:21px!important;
+  line-height:1.2!important;
+  font-weight:900!important;
+}
+.hero-card .hero-description{display:none!important}
+
+@media(max-width:480px){
+  .hero-card{
+    min-height:335px!important;
+    padding:176px 16px 27px!important;
+    border-radius:28px!important;
+  }
+  .hero-card:before{
+    width:205px!important;
+    height:145px!important;
+    top:8px!important;
+  }
+  .hero-card:after{top:158px!important}
+  .hero-card .hero-kicker{font-size:13px!important;padding:7px 17px!important}
+  .hero-card h1{font-size:37px!important}
+  .hero-card .hero-subtitle{font-size:19px!important}
+}
+</style>
+
+
+<style id="admin-name-fix">
+#admin .table-scroll td:first-child{
+  font-size:16px!important;
+  color:#102f48!important;
+  min-width:130px!important;
+}
+#admin .table-scroll td:first-child strong{
+  font-weight:900!important;
+}
+</style>
+<style id="admin-monthly-charts">
+#adminCharts{margin:22px 0}
+.admin-month-nav{background:#fffdf8;border:1px solid #e7dfcf;border-radius:24px;padding:22px;margin-bottom:14px;box-shadow:0 8px 24px rgba(25,43,55,.06)}
+.admin-month-nav h3{margin:0;color:#102f48;font-size:24px}.admin-month-nav p{margin:5px 0 0;color:#8994a0}
+.month-pills{display:flex;gap:8px;overflow-x:auto;padding:16px 0 2px;scrollbar-width:thin;direction:rtl}
+.month-pill{flex:0 0 auto;border:1px solid #ded6c6;background:#fff;border-radius:999px;padding:9px 14px;color:#18364e;font-weight:800;cursor:pointer}.month-pill small{font-weight:600;opacity:.7}.month-pill.active{background:#0d3652;color:#f1d277;border-color:#0d3652}
+.admin-overview-card{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}.admin-overview-card>div{background:#f8f3e8;border-radius:18px;padding:15px;text-align:center;border:1px solid #e9e0cf}.admin-overview-card span{display:block;color:#8994a0;font-size:13px}.admin-overview-card strong{display:block;color:#12344e;font-size:23px;margin-top:4px}
+.chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.chart-card{margin:0}.chart-card h3{margin-top:0;color:#12344e}.admin-chart-row,.member-chart-row{padding:13px 0;border-bottom:1px solid #eee8dc}.admin-chart-row:last-child,.member-chart-row:last-child{border-bottom:0}.admin-chart-label,.member-chart-head{display:flex;justify-content:space-between;align-items:center;gap:10px;color:#17374f}.admin-chart-label span,.member-chart-head b{color:#b58d32;font-weight:900}.admin-track{height:12px;background:#e8e1d3;border-radius:999px;overflow:hidden;margin:8px 0}.admin-fill,.member-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,#b88f35,#e4c66d)}.member-fill{background:#1a5470}.admin-chart-meta,.member-chart-row small{color:#9199a2;font-size:12px}.member-chart-head span{font-weight:800;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(max-width:700px){.chart-grid{grid-template-columns:1fr}.admin-overview-card{grid-template-columns:repeat(3,1fr)}.admin-overview-card strong{font-size:19px}.admin-month-nav{padding:18px}.month-pills{margin:0 -2px}}
+</style>
+
+<style id="tools-ui">
+.tool-switch,.tool-tabs{display:flex;gap:8px;overflow:auto;margin:12px 0;direction:rtl}
+.tool-switch button,.tool-tabs button,.month-pill{border:1px solid #e4dfd3;background:#fffdf8;border-radius:14px;padding:10px 14px;font:inherit;color:#153650;white-space:nowrap}
+.tool-switch button.active,.tool-tabs button.active{background:#0a3450;color:#f3d47b;border-color:#0a3450}
+.tool-grid{display:grid;gap:14px}
+.tool-card{display:flex;gap:15px;align-items:flex-start;background:#fffdf8;border:1px solid #e7e0d2;border-radius:22px;padding:18px;box-shadow:0 8px 20px rgba(18,45,62,.05)}
+.tool-icon{width:48px;height:48px;border-radius:15px;background:#f2e3b7;display:grid;place-items:center;font-size:24px;flex:0 0 auto}
+.tool-card h3{margin:4px 0;font-size:21px}.tool-card p{margin:3px 0;color:#788390}.tool-scope,.tool-meta{font-size:12px;color:#a08a56}
+.tool-open{display:inline-block;margin-top:10px;border:0;border-radius:10px;background:#0a3450;color:#fff;padding:8px 14px;text-decoration:none;font-weight:800}
+.empty-tools{padding:28px;text-align:center}
+.monthly-exams{margin-top:18px}.exam-link-card{display:flex;align-items:center;gap:12px;justify-content:space-between;border-top:1px solid #eee6d8;padding:14px 0}
+.admin-tool-form{border-top:1px solid #ebe4d8;padding-top:18px;margin-top:18px}.admin-tool-form:first-of-type{border-top:0}
+.admin-tool-form label{display:block;font-weight:700;color:#23435b;margin:9px 0}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.form-grid label{margin:0}
+.admin-tool-form input,.admin-tool-form select,.admin-tool-form textarea{width:100%;box-sizing:border-box;margin-top:5px;padding:11px;border:1px solid #ded8cb;border-radius:12px;background:#fff}
+.admin-tool-form .primary{margin-top:10px}
+.week-tools{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}
+.tool-mini{border:1px solid #e2d7bc;background:#fbf3db;color:#725924;border-radius:10px;padding:7px 10px;font-weight:800}
+@media(max-width:520px){.form-grid{grid-template-columns:1fr}.exam-link-card{align-items:flex-start;flex-direction:column}}
+
+.flash-stats{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}.flash-stats span{background:#eef3f9;border-radius:999px;padding:7px 12px;font-size:.9rem}.flashcard{background:#fff;border:1px solid #dce4ee;border-radius:22px;padding:24px;box-shadow:0 8px 25px rgba(17,42,70,.08);margin-top:14px}.flashcard-top{display:flex;justify-content:space-between;color:#718096;font-size:.9rem;margin-bottom:24px}.flash-q{font-size:1.35rem;font-weight:700;line-height:1.7;min-height:110px}.flash-a{margin-top:20px;padding:18px;border-radius:16px;background:#f5f8fc;line-height:1.8;font-size:1.08rem}.flash-show{margin-top:20px;width:100%}.flash-actions{display:flex;gap:10px;margin-top:16px}.flash-actions button{flex:1}.flash-source{margin-top:18px;padding-top:12px;border-top:1px solid #e7edf4;color:#718096;font-size:.82rem}.flash-nav{display:flex;gap:10px;justify-content:space-between;margin-top:14px}.flash-nav button{min-width:110px}.flash-nav button:disabled{opacity:.45}
+.cards-hero{margin-bottom:16px}
+.cards-intro{font-size:15px;line-height:1.8;color:#d8e1ea}
+.cards-control-card{background:#fffdf8;border:1px solid var(--line);border-radius:24px;padding:20px;margin:14px 0;box-shadow:0 8px 25px rgba(17,42,70,.06)}
+.cards-control-title{font-size:18px;font-weight:900;color:var(--navy);margin-bottom:10px}
+.cards-scope-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.cards-scope-grid button{min-height:58px;border:1px solid #ddd4c4;background:#fff;border-radius:15px;color:var(--navy);font-weight:900;padding:10px 12px}
+.cards-scope-grid button.active{background:linear-gradient(135deg,#092844,#17486c);color:#fff;border-color:#092844;box-shadow:0 5px 14px rgba(9,40,68,.15)}
+.cards-masechet-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cards-masechet-grid button{border:1px solid #ddd4c4;background:#fff;border-radius:15px;padding:12px;font-weight:900;color:var(--navy)}
+.cards-masechet-grid button.active{background:#f2dfad;border-color:#c79a3b;color:#62491d}
+.cards-level-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cards-level-grid button{border:1px solid #ddd4c4;background:#fff;border-radius:15px;padding:12px;font-weight:900;color:var(--navy)}
+.cards-level-grid button.active{background:#edf3f8;border-color:#17486c}
+.cards-perek-select{width:100%;padding:13px;border:1px solid #d8d2c5;border-radius:13px;background:#fff;color:var(--navy);font-weight:800}
+.cards-range-note{margin-top:10px;padding:10px 12px;background:#f5f1e8;border-radius:12px;color:#6e6049;font-size:13px;line-height:1.7}
+.cards-stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+.cards-stat-box{background:#f7f9fb;border:1px solid #e1e7ee;border-radius:15px;padding:12px;text-align:center}
+.cards-stat-box b{display:block;font-size:23px;color:var(--navy)}
+.cards-stat-box span{font-size:12px;color:var(--muted);font-weight:800}
+@media(max-width:650px){.cards-scope-grid{grid-template-columns:1fr}.cards-masechet-grid,.cards-level-grid{grid-template-columns:1fr 1fr}.cards-stats-row{grid-template-columns:1fr 1fr 1fr}}
+
+</style>
+
+<style id="kinyan-v7-clean-css">
+:root{--v7-radius:22px}
+.wrap{max-width:860px;padding-bottom:92px}.top{padding:12px 0 16px}.brand{font-size:22px}.brand small{font-size:10px}
+.hero-card,.section-hero{border-radius:24px;padding:25px 22px;box-shadow:0 10px 28px rgba(10,32,55,.07)}.hero-card h1,.section-hero h2{font-size:30px;margin:10px 0 5px}
+.section-head{margin:22px 2px 10px}.section-head h2,.section-head h3{font-size:20px}.card{border-radius:22px;padding:19px;margin:12px 0;box-shadow:0 5px 18px rgba(10,32,55,.035)}
+.home-clean{display:grid;gap:12px}.home-masechet-switch{margin-bottom:12px}.home-masechet-switch .switches{display:grid;grid-template-columns:1fr 1fr;gap:10px}.home-masechet-switch .switch{min-height:48px}.home-week-card{padding:20px;background:var(--paper);border:1px solid var(--line);border-radius:22px;border-right:6px solid var(--line);position:relative;overflow:hidden}.home-week-card.masechet-sanhedrin{border-right-color:#2f6f9f}.home-week-card.masechet-bava{border-right-color:#5c8f68}.home-week-card .week-subject span{font-weight:900}.home-week-card.masechet-sanhedrin .week-subject span{color:#2f6f9f}.home-week-card.masechet-bava .week-subject span{color:#5c8f68}.home-week-card h2{font-size:27px;margin:10px 0 6px;color:var(--navy)}.home-week-card .week-meta{font-size:13px}.home-parasha{display:block;margin-top:18px;padding:16px 14px;border-radius:18px;background:#f8f3e8;border:1px solid #eadfca;text-align:center}.home-parasha-label{display:block;font-size:13px;color:var(--muted);font-weight:900;margin-bottom:5px}.home-parasha-name{display:block;font-size:28px;font-weight:950;color:var(--navy);line-height:1.25}.home-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}.home-actions button{border:1px solid #e4d5b3;background:#fff8e8;color:#6c5325;border-radius:10px;padding:8px 10px;font-weight:800;font-size:12px}
+.clean-note{color:var(--muted);font-size:13px;margin:4px 0}.plan-switch-card{padding:13px 16px}.plan-current{border-top:3px solid var(--gold)}.plan-all-wrap .plan-table-container{display:none}
+.personal-summary{display:grid;grid-template-columns:1fr 1fr;gap:10px}.personal-summary .stat-card{padding:15px;border:1px solid var(--line);border-radius:18px;background:var(--paper)}.personal-summary .stat-card span{display:block;color:var(--muted);font-size:12px;font-weight:800}.personal-summary .stat-card b{display:block;font-size:27px;color:var(--navy);margin-top:4px}.personal-exams .exam-result-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}.personal-exams .exam-result-row:last-child{border-bottom:0}.exam-score{font-size:20px;font-weight:900;color:var(--navy)}
+.tools-clean-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.tools-clean-grid .tool-choice{padding:22px 16px;text-align:center;border:1px solid var(--line);border-radius:20px;background:var(--paper);cursor:pointer}.tools-clean-grid .tool-choice.selected{border-color:#d9bc79;background:#fff8e7}.tools-clean-grid .tool-icon{font-size:27px}.tools-clean-grid h3{margin:9px 0 4px;color:var(--navy)}.tools-clean-grid p{margin:0;color:var(--muted);font-size:12px}
+.admin-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.admin-kpi{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:15px}.admin-kpi span{display:block;color:var(--muted);font-size:12px;font-weight:800}.admin-kpi strong{display:block;color:var(--navy);font-size:28px;margin-top:4px}.admin-tabs{display:flex;gap:7px;overflow:auto;padding:3px 1px 5px;scrollbar-width:none}.admin-tabs button{white-space:nowrap;border:1px solid var(--line);background:#fff;border-radius:11px;padding:9px 12px;color:var(--navy);font-weight:900}.admin-tabs button.active{background:var(--navy);border-color:var(--navy);color:#f1d38d}.admin-panel{display:none}.admin-panel.active{display:block}.admin-member-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.admin-member-card{margin:0}.admin-member-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.admin-member-top h3{margin:0;color:var(--navy);font-size:20px}.admin-member-top small{color:var(--muted)}.admin-member-top>strong{font-size:22px;color:var(--navy)}.member-statline{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-top:10px}.admin-bar{height:10px;background:#e9e3d8;border-radius:999px;overflow:hidden;margin-top:8px}.admin-bar i{display:block;height:100%;background:linear-gradient(90deg,#b98a34,#dfc174);border-radius:999px}.admin-ranking{display:grid;gap:8px}.admin-ranking-row{display:grid;grid-template-columns:28px 1fr 50px;align-items:center;gap:8px;padding:10px 0;border-bottom:1px solid var(--line)}.admin-ranking-row:last-child{border-bottom:0}.admin-ranking-row .rank{font-weight:900;color:var(--gold);text-align:center}.admin-ranking-row b{color:var(--navy)}.admin-empty{padding:25px;text-align:center;color:var(--muted)}.admin-section-title{margin:0 0 5px;color:var(--navy)}.admin-section-sub{margin:0 0 14px;color:var(--muted);font-size:13px}.admin-bars{display:grid;gap:14px}.admin-bars .bar-head{display:flex;justify-content:space-between;font-weight:900;color:var(--navy);font-size:13px}.admin-exam-row{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}.admin-exam-row:last-child{border-bottom:0}.admin-exam-row .who{font-weight:900;color:var(--navy)}.admin-exam-row .exam-meta{font-size:12px;color:var(--muted);margin-top:3px}.admin-exam-score{font-size:18px;font-weight:900;color:var(--navy)}
+@media(max-width:700px){.tools-clean-grid{grid-template-columns:1fr}.admin-kpis{grid-template-columns:1fr 1fr}.admin-member-grid{grid-template-columns:1fr}.hero-card h1,.section-hero h2{font-size:27px}}@media(max-width:450px){.personal-summary{grid-template-columns:1fr 1fr}.admin-kpi strong{font-size:24px}}
+</style>
+</head><body><div class="wrap"><header class="top"><div class="brand"><img class="project-logo" src="assets/kinyan-logo.png" alt="קנין תורה — כולל בני עלייה"><div class="brand-copy"><b>קנין תורה</b><small>חוזרים יודעים</small></div></div><div class="top-actions"><a class="outline masechet-link" id="switchMasechet" href="?masechet=bava">מעבר למסכת בבא קמא ←</a><button class="outline" onclick="go('home')">ראשי</button></div></header><main>
+<section id="home" class="view active"></section><section id="plan" class="view"></section><section id="cards" class="view"></section><section id="personal" class="view"><div id="personalFlashcardStats" class="card" style="margin:12px 0;">
+      <h3 style="margin:0 0 8px">🃏 חזרה בכרטיסיות</h3>
+      <div id="personalFlashcardStatsBody" style="color:#475569">טוען נתוני חזרה…</div>
+    </div>
+    </section><section id="tools" class="view"></section><section id="admin" class="view"></section>
+</main></div><nav><button class="navbtn active" data-view="home">⌂<br>ראשי</button><button class="navbtn" data-view="plan">▤<br>תכנית</button><button class="navbtn" data-view="tools">🧰<br>כלים</button><button class="navbtn" data-view="cards">🃏<br>כרטיסיות</button><button class="navbtn" data-view="personal">♙<br>אישי</button><button class="navbtn hidden" id="adminNav" data-view="admin">⚙<br>ניהול</button></nav>
+
+<script src="assets/kch_sanhedrin_c_flashcards.js"></script><script src="assets/kch_bava_kama_c_flashcards.js"></script><script src="assets/kch_sanhedrin_e_flashcards.js"></script><script src="assets/kch_bava_kama_e_flashcards.js"></script><script src="assets/kinyan-app.js"></script>
+
+
+<noscript><div style="padding:30px;text-align:center;font-family:Arial;direction:rtl">
+<h2>יש להפעיל JavaScript בדפדפן</h2></div></noscript>
+
+<script id="compact-plan-js">
+(function(){
+  let planRows=[], idx=0;
+  function hebNum(n){
+    const a=["","א","ב","ג","ד","ה","ו","ז","ח","ט","י","יא","יב","יג","יד","טו","טז","יז","יח","יט","כ"];
+    return a[n]||String(n);
+  }
+  function collect(){
+    const rows=[...document.querySelectorAll("#plan table tbody tr")];
+    planRows=rows.map((tr,i)=>{
+      const c=[...tr.children].map(x=>x.textContent.trim());
+      return {week:c[0]||("שבוע "+(i+1)),dates:c[1]||"",parsha:c[2]||"",hespek:c[4]||"",perek:c[5]||""};
+    });
+    if(!planRows.length){
+      planRows=[{week:"שבוע 1",dates:"ל׳ תשרי תשפ״ז – ו׳ חשון תשפ״ז",parsha:"נח",hespek:"דף ב׳ ע״א – דף ג׳ ע״א",perek:"פרק א׳ – דיני ממונות בשלשה"}];
+    }
+    idx=0; render();
+  }
+  function render(){
+    const r=planRows[idx];
+    const $=id=>document.getElementById(id);
+    if(!$("planTitle"))return;
+    $("planCounter").textContent=r.week;
+    $("planTitle").textContent=r.week;
+    $("planDates").textContent=r.dates;
+    $("planParsha").textContent=r.parsha ? "פרשת "+r.parsha : "";
+    $("planDapim").textContent=r.hespek || "";
+    $("planStatus").textContent=r.perek || "שבוע לימוד";
+    $("planLabel").textContent=idx===0?"השבוע הנוכחי":"שבוע "+(idx+1);
+    $("planPrev").disabled=idx===0;
+    $("planNext").disabled=idx===planRows.length-1;
+    $("planPrev").style.opacity=$("planNext").style.opacity="1";
+    const all=$("planAll");
+    all.innerHTML=planRows.map((x,i)=>`<div class="plan-all-row ${i===idx?'current':''}">
+      <b>${x.week}</b><span>${x.dates}</span><strong>${x.parsha}</strong>
+    </div>`).join("");
+  }
+  document.addEventListener("click",e=>{
+    if(e.target.id==="planPrev"&&idx>0){idx--;render()}
+    if(e.target.id==="planNext"&&idx<planRows.length-1){idx++;render()}
+    if(e.target.id==="planMore"){
+      const a=document.getElementById("planAll"), b=document.getElementById("planMore");
+      a.classList.toggle("open"); b.textContent=a.classList.contains("open")?"הסתר את התכנית ↑":"הצג את כל התכנית ↓";
+    }
+  });
+  document.addEventListener("DOMContentLoaded",()=>setTimeout(collect,250));
+  window.addEventListener("kinyan-data-ready",()=>setTimeout(collect,250));
+})();
+</script>
+
+<script>
+(function(){
+  async function loadPersonalFlashcardStats(){
+    const box=document.getElementById('personalFlashcardStatsBody');
+    if(!box || typeof sb==='undefined') return;
+    try{
+      const {data:{user}}=await sb.auth.getUser();
+      if(!user){ box.textContent='יש להתחבר כדי לראות את נתוני החזרה.'; return; }
+
+      // Read the user's card progress. The migration created kch_flashcard_progress.
+      const {data,error}=await sb.from('kch_flashcard_progress')
+        .select('card_id,masechet,status,updated_at')
+        .eq('user_id',user.id);
+
+      if(error){ box.textContent='לא ניתן לטעון את נתוני הכרטיסיות כרגע.'; return; }
+
+      const rows=data||[];
+      const total=rows.length;
+      const known=rows.filter(r=>r.status==='known'||r.status==='ידעתי').length;
+      const review=rows.filter(r=>r.status==='review'||r.status==='צריך חזרה').length;
+
+      // Current week: use the app's existing current-week helper/data when available.
+      let weekLabel='';
+      try{
+        if(typeof getCurrentWeekNo==='function'){
+          weekLabel='שבוע '+getCurrentWeekNo();
+        } else if(typeof currentWeekNo!=='undefined'){
+          weekLabel='שבוע '+currentWeekNo;
+        }
+      }catch(e){}
+
+      box.innerHTML =
+        '<div style="display:flex;gap:10px;flex-wrap:wrap">'+
+          '<div><b>'+total+'</b> כרטיסיות שנענו</div>'+
+          '<div><b>'+known+'</b> ידעתי</div>'+
+          '<div><b>'+review+'</b> צריך חזרה</div>'+
+        '</div>'+
+        (weekLabel?'<div style="margin-top:7px;font-size:13px">'+weekLabel+'</div>':'');
+    }catch(e){
+      if(box) box.textContent='לא ניתן לטעון את נתוני החזרה כרגע.';
+    }
+  }
+
+  // Hook into common navigation/rendering functions without replacing them.
+  const oldGo = window.go;
+  if(typeof oldGo==='function'){
+    window.go=function(view){
+      const result=oldGo.apply(this,arguments);
+      if(view==='personal') setTimeout(loadPersonalFlashcardStats,100);
+      return result;
+    };
+  }
+
+  document.addEventListener('DOMContentLoaded',function(){
+    setTimeout(loadPersonalFlashcardStats,300);
+  });
+
+  window.loadPersonalFlashcardStats=loadPersonalFlashcardStats;
+})();
+</script>
+
+<script src="assets/kinyan-extra-cards.js"></script>
+
+<script>
+(function(){
+  // Cleaned Anki Torah source: 3,609 unique cards, covering דף ב׳–קי״ג.
+  window.KCH_SANHEDRIN_LEGACY_CARD_COUNT = 3609;
+  window.KCH_SANHEDRIN_SOURCE = 'Anki Torah';
+})();
+</script>
+
+<script>(function(){window.KCH_BAVA_KAMA_SOURCE='Anki Daf';window.KCH_BAVA_KAMA_CARD_COUNT=(window.KCH_BAVA_KAMA_CARD_COUNTS||{}).total||0;})();</script>
+<script>
+window.KCH_CARDS_DEDICATED_SECTION=true;
+window.KCH_WEEK_FILTER_EXACT_AMUD=true;
+window.KCH_PEREK_DECKS_AUTHORITATIVE=true;
+window.KCH_SANHEDRIN_SOURCE='Anki Daf';
+window.KCH_SANHEDRIN_INTEGRATED=true;
+</script>
+
+<script>
+window.KCH_UI_STRUCTURE={
+  tools:["summary","table","exam"],
+  cards:["week","through","perek"],
+  management:["upload","manage"]
+};
+</script>
+<style id="kinyan-final-architecture">
+:root{--accent:#07396b;--accent2:#0a2742;--accent-soft:#e9f0f7;--accent-ink:#07396b;--gold:#c59a48}
+body.theme-sanhedrin{--accent:#07396b;--accent2:#0a2742;--accent-soft:#e9f0f7;--accent-ink:#07396b}
+body.theme-bava{--accent:#17665d;--accent2:#104c45;--accent-soft:#e5f3ef;--accent-ink:#17665d}
+.brand-copy b,.section-hero h2,.section-head h2,.section-head h3,.masechet-card h3{color:var(--accent-ink)!important}
+.hero-card,.section-hero,nav{background:linear-gradient(145deg,var(--accent2),var(--accent))!important}
+.primary,.switch.selected,.status.chosen{background:var(--accent)!important;border-color:var(--accent)!important}
+.bar i{background:linear-gradient(90deg,var(--accent),var(--gold))!important}
+.badge,.hero-kicker,.section-hero span{border-color:#e2c77f}
+#personal,.navbtn[data-view="personal"],.home-masechet-switch,.plan-switch-card,.cards-control-card:has(.cards-masechet-grid),.cards-masechet-grid{display:none!important}
+#adminNav{display:block!important}
+.masechet-link{border-color:var(--accent)!important;color:var(--accent)!important}
+#admin .admin-tabs{display:none!important}
+.weekly-list-item{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}
+.weekly-list-item:last-child{border-bottom:0}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.admin-tool-form label,.weekly-form label{display:block;font-weight:800;color:var(--accent-ink);margin:10px 0 6px}.weekly-form input,.weekly-form textarea,.weekly-form select,.weekly-form input[type=text],.weekly-form input[type=number],.weekly-form input[type=url],.weekly-form input[type=email]{width:100%;padding:11px;border:1px solid #d8d2c5;border-radius:10px;background:white}.weekly-form textarea{min-height:90px}.published-chip{display:inline-block;border-radius:20px;padding:5px 9px;background:#e2f4e7;color:#17683a;font-size:12px;font-weight:800}.draft-chip{display:inline-block;border-radius:20px;padding:5px 9px;background:#f7edda;color:#795a1d;font-size:12px;font-weight:800}.empty-note{padding:20px;background:#fff;border:1px dashed #d6cbb7;border-radius:15px;color:var(--muted)}.admin-action-row{display:flex;gap:8px;flex-wrap:wrap}.small-action{border:1px solid var(--line);border-radius:9px;padding:7px 10px;background:white;color:var(--accent);font-weight:800}.resource-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.resource-link{display:block;color:var(--accent);font-weight:900;text-decoration:none;margin-top:10px;overflow-wrap:anywhere}.top{gap:12px}.project-logo{max-width:70px;height:auto}.brand-copy{display:inline-block;vertical-align:middle;margin-inline-start:8px}.brand{display:flex;align-items:center;gap:8px}.brand-copy small{display:block}
+@media(max-width:650px){.form-grid,.resource-list{grid-template-columns:1fr}.top{align-items:flex-start}.project-logo{max-width:54px}.brand-copy b{font-size:19px}.masechet-link{font-size:12px;padding:8px}.weekly-list-item{align-items:flex-start;flex-direction:column}}
+</style>
+<script id="kinyan-final-architecture-js">
+// Nueva arquitectura: dos espacios independientes, publicación manual y sin cuentas de alumnos.
+let kchPublishedWeek = null;
+let kchWeeklyRows = [];
+let kchAdminEditingId = null;
+function kchEsc(v){return esc(v==null?'':v)}
+function kchMasechet(){return PAGE_MASECHET}
+function kchDafRangeText(r){return r?.daf_range || 'Rango de דפים pendiente'}
+function kchWeekRow(r){return `<article class="card current-week"><div class="week-top"><span class="badge">${r.week_number?'שבוע '+kchEsc(r.week_number):'הספק שבועי'}</span><strong>${kchEsc(r.title||'הספק השבוע')}</strong></div><div class="week-subject"><span>מסכת ${kchEsc(PAGE_MASECHET)}</span><span>${kchEsc(r.perek||'')}</span></div><h2>${kchEsc(kchDafRangeText(r))}</h2><div class="week-meta">${kchEsc(r.content||'')}</div>${r.daily_breakdown?`<div class="detail-block"><strong>חלוקה לפי ימים</strong><div>${kchEsc(r.daily_breakdown).replace(/\n/g,'<br>')}</div></div>`:''}</article>`}
+async function kchLoadWeeks(){
+ if(!sb) return [];
+ const {data,error}=await sb.from('kch_weekly_hespek').select('*').eq('masechet',PAGE_MASECHET).eq('published',true).order('week_number',{ascending:true});
+ if(error){console.warn('kch_weekly_hespek',error);return []} return data||[];
+}
+function kchCurrentPublished(rows){if(!rows.length)return null;const explicit=rows.filter(r=>r.is_current===true);return explicit.sort((a,b)=>Number(b.week_number)-Number(a.week_number))[0]||rows[rows.length-1]}
+function renderHome(){
+ const root=document.getElementById('home'); if(!root)return;
+ const name=PAGE_MASECHET==='סנהדרין'?'סנהדרין':'בבא קמא';
+ root.innerHTML=`<div class="section-hero"><span>קנין תורה · כולל בני עלייה</span><h2>הספק השבועי · מסכת ${name}</h2><p>ההספק השבועי שפורסם על ידי מנהל הכולל.</p></div><div id="publishedWeekHome"><div class="empty-note">טוען הספק שבועי…</div></div>`;
+ kchLoadWeeks().then(rows=>{kchWeeklyRows=rows;kchPublishedWeek=kchCurrentPublished(rows);const box=document.getElementById('publishedWeekHome');if(!box)return;box.innerHTML=kchPublishedWeek?kchWeekRow(kchPublishedWeek):'<div class="empty-note">טרם פורסם הספק שבועי למסכת זו. יש להיכנס לניהול ולפרסם את הספק השבוע.</div>';});
+}
+function renderPlan(){
+ const root=document.getElementById('plan');if(!root)return;
+ const all=(rowsFor(PAGE_MASECHET)||[]).filter(r=>r[4] && r[5]);
+ const total=all.length;
+ const currentWeek=currentIndex+1;
+ const weekNoFor=r=>Number(String(r[0]||'').match(/(\d+)/)?.[1]||0);
+ const currentRows=all.filter(r=>weekNoFor(r)<=currentWeek);
+ const pct=total?Math.max(0,Math.min(100,Math.round(currentRows.length/total*100))):0;
+ const chapters=[];const seen=new Set();
+ all.forEach(r=>{const p=String(r[5]||'').trim();if(p&&!seen.has(p)){seen.add(p);chapters.push(p)}});
+ const chapterHtml=chapters.map(p=>{
+   const items=all.filter(r=>String(r[5]||'').trim()===p);
+   const reached=items.filter(r=>weekNoFor(r)<=currentWeek).length;
+   const cp=items.length?Math.round(reached/items.length*100):0;
+   return `<div class="kt-progress-row"><div class="kt-progress-head"><strong>${kchEsc(p)}</strong><span>${cp}%</span></div><div class="kt-progress-track" role="progressbar" aria-valuenow="${cp}" aria-valuemin="0" aria-valuemax="100" aria-label="${kchEsc(p)}"><i style="width:${cp}%"></i></div></div>`;
+ }).join('');
+ root.innerHTML=`<div class="section-hero"><span>התכנית</span><h2>התקדמות מסכת ${kchEsc(PAGE_MASECHET)}</h2><p>מבט גרפי על ההתקדמות במסכת ובכל פרק.</p></div><style>.kt-progress-summary{display:grid;grid-template-columns:112px 1fr;gap:18px;align-items:center}.kt-progress-ring{width:108px;height:108px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--accent) ${pct}%,#ece5d7 0);position:relative}.kt-progress-ring:before{content:"";position:absolute;inset:9px;border-radius:50%;background:var(--paper)}.kt-progress-ring b{position:relative;font-size:25px;color:var(--accent)}.kt-progress-summary h3{margin:0 0 7px;color:var(--accent-ink)}.kt-progress-summary p{margin:0;color:var(--muted);line-height:1.7;font-size:13px}.kt-progress-list{display:grid;gap:17px}.kt-progress-row{padding-bottom:15px;border-bottom:1px solid var(--line)}.kt-progress-row:last-child{border-bottom:0;padding-bottom:0}.kt-progress-head,.kt-progress-foot{display:flex;justify-content:space-between;align-items:center;gap:10px}.kt-progress-head strong{font-size:14px;color:var(--accent-ink)}.kt-progress-head span{font-weight:900;color:var(--accent)}.kt-progress-track{height:10px;border-radius:999px;background:#ece5d7;overflow:hidden;margin:9px 0 6px}.kt-progress-track i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--gold))}.kt-progress-foot{font-size:11px;color:var(--muted)}@media(max-width:480px){.kt-progress-summary{grid-template-columns:84px 1fr;gap:12px}.kt-progress-ring{width:82px;height:82px}.kt-progress-ring b{font-size:20px}}</style><div class="card"><div class="kt-progress-summary"><div class="kt-progress-ring" aria-label="התקדמות כללית ${pct}%"><b>${pct}%</b></div><div><h3>התקדמות כללית במסכת</h3><p>הגרף מחושב לפי לוח התכנית והתאריך הנוכחי, ולא לפי דיווח השלמה אישי. הוא מציג את מיקום התכנית בלבד.</p></div></div></div><div class="card"><h3 style="margin-top:0;color:var(--accent-ink)">התקדמות לפי פרק</h3><div class="kt-progress-list">${chapterHtml||'<div class="empty-note">אין נתוני פרקים להצגה.</div>'}</div></div>`;
+}
+async function renderTools(){
+ const root=document.getElementById('tools');if(!root)return;if(!toolsType)toolsType='summary';
+ root.innerHTML=`<div class="section-hero"><span>חומרי עזר</span><h2>מסכת ${PAGE_MASECHET}</h2><p>כל הסיכומים, הטבלאות והמבחנים שפורסמו למסכת זו.</p></div><div class="tools-clean-grid"><button class="tool-choice ${toolsType==='summary'?'selected':''}" data-ktype="summary"><div class="tool-icon">📚</div><h3>סיכומים</h3><p>כל הסיכומים שפורסמו.</p></button><button class="tool-choice ${toolsType==='table'?'selected':''}" data-ktype="table"><div class="tool-icon">📊</div><h3>טבלאות</h3><p>כל הטבלאות שפורסמו.</p></button><button class="tool-choice ${toolsType==='exam'?'selected':''}" data-ktype="exam"><div class="tool-icon">📝</div><h3>מבחנים</h3><p>כל המבחנים שפורסמו, בקישורים ל-Google Forms.</p></button></div><div id="publicResources"><div class="empty-note">טוען חומרי עזר…</div></div>`;
+ root.querySelectorAll('[data-ktype]').forEach(b=>b.onclick=()=>{toolsType=b.dataset.ktype;renderTools()});
+ if(!sb){document.getElementById('publicResources').innerHTML='<div class="empty-note">לא ניתן להתחבר למאגר כרגע.</div>';return}
+ const target=document.getElementById('publicResources');
+ if(toolsType==='exam'){
+  const {data,error}=await sb.from('kch_monthly_exams').select('id,title,description,google_form_url,hebrew_month,hebrew_year,masechet,published').eq('masechet',PAGE_MASECHET).eq('published',true).order('created_at',{ascending:false});
+  if(error){target.innerHTML='<div class="empty-note">לא ניתן לטעון מבחנים. יש לבדוק הרשאות הטבלה.</div>';return}
+  target.innerHTML=data?.length?data.map(e=>`<article class="card"><span class="badge">${kchEsc(e.hebrew_month||'')} ${kchEsc(e.hebrew_year||'')}</span><h3>${kchEsc(e.title)}</h3><p>${kchEsc(e.description||'מבחן למסכת '+PAGE_MASECHET)}</p>${e.google_form_url?`<a class="primary" style="display:inline-block;text-decoration:none" href="${kchEsc(e.google_form_url)}" target="_blank" rel="noopener">פתיחת המבחן ↗</a>`:'<span class="meta">הקישור יפורסם בהמשך</span>'}</article>`).join(''):'<div class="empty-note">אין מבחנים שפורסמו למסכת זו.</div>';return;
+ }
+ const {data,error}=await sb.from('kch_tools').select('id,masechet,tool_type,title,description,file_path,file_name,scope_type,week_no,perek,is_published').eq('masechet',PAGE_MASECHET).eq('tool_type',toolsType||'summary').eq('is_published',true).order('created_at',{ascending:false});
+ if(error){target.innerHTML='<div class="empty-note">לא ניתן לטעון חומרי עזר. יש לבדוק הרשאות הטבלה.</div>';return}
+ target.innerHTML=data?.length?`<div class="resource-list">${data.map(t=>`<article class="card"><h3>${kchEsc(t.title)}</h3><p>${kchEsc(t.description||'')}</p>${t.file_path?(String(t.file_path).startsWith('https://')?`<a class="primary" style="display:inline-block;text-decoration:none" href="${kchEsc(t.file_path)}" target="_blank" rel="noopener">פתיחת חומר ↗</a>`:`<button class="primary" data-file-path="${kchEsc(t.file_path)}">פתיחת חומר ↗</button>`):''}</article>`).join('')}</div>`:'<div class="empty-note">אין חומר שפורסם בקטגוריה זו.</div>';
+ target.querySelectorAll('[data-file-path]').forEach(b=>b.onclick=async()=>{try{const {data,error}=await sb.storage.from('kch-tools').createSignedUrl(b.dataset.filePath,300);if(error)throw error;window.open(data.signedUrl,'_blank','noopener')}catch(e){alert('לא ניתן לפתוח את הקובץ: '+e.message)}});
+}
+function kchAdminLogin(){return `<div class="section-hero"><span>ניהול</span><h2>כניסת מנהל</h2><p>הגישה מוגבלת לחשבון מנהל הכולל בלבד. אין הרשמה או חשבון אישי לתלמידים.</p></div><div class="card weekly-form"><label>אימייל מנהל</label><input id="adminEmail" type="email" autocomplete="username"><label>סיסמה</label><input id="adminPassword" type="password" autocomplete="current-password"><button class="primary" id="adminLoginButton">כניסה למערכת הניהול</button><div id="adminLoginMessage" class="error"></div></div>`}
+async function renderAdmin(){
+ const root=document.getElementById('admin');if(!root)return;
+ if(!sb){root.innerHTML='<div class="section-hero"><span>ניהול</span><h2>מתחבר למערכת</h2><p>אם המסך נשאר כך, בדוק חיבור לאינטרנט ונסה שוב.</p></div><div class="card"><button class="primary" id="retryAdminConnect">ניסיון התחברות מחדש</button></div>';document.getElementById('retryAdminConnect').onclick=async()=>{try{if(window.supabase&&SUPABASE_URL&&SUPABASE_KEY)sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);await refreshSession();await renderAdmin()}catch(e){root.insertAdjacentHTML('beforeend','<div class="card error">'+kchEsc(e.message)+'</div>')}};return}
+ if(!user){root.innerHTML=kchAdminLogin();document.getElementById('adminLoginButton').onclick=async()=>{const email=document.getElementById('adminEmail').value.trim(),password=document.getElementById('adminPassword').value;const msg=document.getElementById('adminLoginMessage');if(!email||!password){msg.textContent='יש למלא אימייל וסיסמה';return}const loginButton=document.getElementById('adminLoginButton');loginButton.disabled=true;msg.textContent='מתחבר…';try{const {error}=await sb.auth.signInWithPassword({email,password});if(error)throw error;await refreshSession();if(profile?.role!=='admin'){await sb.auth.signOut();await refreshSession();throw new Error('ההתחברות הצליחה, אך לא נמצאה הרשאת מנהל בפרופיל. יש לוודא שהחשבון מוגדר כ-admin בטבלת profiles או kch_profiles.')}await renderAdmin()}catch(e){msg.textContent=e?.message||'הכניסה נכשלה';const currentButton=document.getElementById('adminLoginButton');if(currentButton)currentButton.disabled=false}};return}
+ if(profile?.role!=='admin'){root.innerHTML='<div class="section-hero"><span>ניהול</span><h2>אין הרשאה</h2><p>רק משתמש שהוגדר כמנהל יכול להיכנס.</p></div><div class="card"><button class="outline" id="adminLogoutUnauthorized">יציאה</button></div>';document.getElementById('adminLogoutUnauthorized').onclick=async()=>{await sb.auth.signOut();await refreshSession();renderAdmin()};return}
+ const {data:rows,error}=await sb.from('kch_weekly_hespek').select('*').eq('masechet',PAGE_MASECHET).order('week_number',{ascending:false});
+ const weekly=error?[]:(rows||[]);
+ root.innerHTML=`<div class="section-hero"><span>ניהול · ${PAGE_MASECHET}</span><h2>ניהול תוכן המסכת</h2><p>פרסום הספקים שבועיים, ניהול חומרי עזר ויצירת קישורי מבחנים. אין מעקב אישי אחר תלמידים.</p><button class="outline" id="adminLogout" style="margin-top:12px">יציאה מחשבון מנהל</button></div><div class="card weekly-form"><h3>＋ פרסום הספק שבועי</h3><p class="meta">אפשר לשמור טיוטה או לפרסם. סימון שבוע כנוכחי מציג אותו בראש העמוד.</p><input id="wkId" type="hidden"><div class="form-grid"><label>מסכת<select id="wkMasechet"><option ${PAGE_MASECHET==='סנהדרין'?'selected':''}>סנהדרין</option><option ${PAGE_MASECHET==='בבא קמא'?'selected':''}>בבא קמא</option></select></label><label>מספר שבוע<input id="wkNumber" type="number" min="1" max="200" required></label><label>כותרת<input id="wkTitle" type="text" placeholder="הספק שבוע 1"></label><label>טווח דפים<input id="wkDaf" type="text" placeholder="דף ב׳ ע״א – דף ד׳ ע״ב" required></label><label>פרק<input id="wkPerek" type="text" placeholder="פרק א׳"></label></div><label>תוכן / הנחיות לימוד</label><textarea id="wkContent" placeholder="מה לומדים השבוע והנחיות מיוחדות"></textarea><label>חלוקה לפי ימים (אופציונלי)</label><textarea id="wkDaily" placeholder="יום א׳: ...&#10;יום ב׳: ..."></textarea><div class="admin-action-row"><label style="display:flex;align-items:center;gap:8px"><input id="wkPublished" type="checkbox" style="width:auto;margin:0"> לפרסם לתלמידים</label><label style="display:flex;align-items:center;gap:8px"><input id="wkCurrent" type="checkbox" style="width:auto;margin:0"> להציג כהספק הנוכחי</label></div><div class="admin-action-row" style="margin-top:12px"><button class="primary" id="wkSave">שמירת הספק</button><button class="outline" id="wkClear">הספק חדש / ניקוי</button></div><div id="wkMsg" class="meta"></div></div><div class="card"><h3>הספקים שמורים — ${PAGE_MASECHET}</h3>${error?'<div class="empty-note">לא ניתן לקרוא את טבלת ההספקים. ודא שהרצת את קובץ SQL המצורף.</div>':weekly.length?weekly.map(r=>`<div class="weekly-list-item"><div><strong>שבוע ${kchEsc(r.week_number)} · ${kchEsc(r.title||'הספק')}</strong><div class="meta">${kchEsc(r.daf_range||'')} · ${kchEsc(r.perek||'')}</div><div>${r.published?'<span class="published-chip">פורסם</span>':'<span class="draft-chip">טיוטה</span>'} ${r.is_current?'<span class="published-chip">נוכחי</span>':''}</div></div><div class="admin-action-row"><button class="small-action" data-edit-week="${kchEsc(r.id)}">עריכה</button></div></div>`).join(''):'<div class="empty-note">אין עדיין הספקים שמורים.</div>'}</div><div class="card weekly-form"><h3>＋ הוספת חומר עזר או קישור</h3><p class="meta">החומרים נשמרים למסכת הנוכחית בלבד. ניתן להוסיף קישור ציבורי או כתובת קובץ.</p><label>סוג חומר</label><select id="resType"><option value="summary">סיכום</option><option value="table">טבלה</option></select><label>כותרת</label><input id="resTitle" type="text"><label>תיאור</label><textarea id="resDescription"></textarea><label>קישור ציבורי לחומר (PDF / מסמך / טבלה)</label><input id="resUrl" type="url" placeholder="https://..."><div class="admin-action-row"><button class="primary" id="resSave">שמירת חומר עזר</button></div><div id="resMsg" class="meta"></div></div><div class="card weekly-form"><h3>＋ מבחן Google Forms</h3><p class="meta">כל מבחן מיועד לבלוק של 10 דפים; יש להזין את הטווח המדויק שאושר. המבחן יופיע כקישור בלבד, ללא שמירת ציונים או תוצאות במערכת.</p><div class="form-grid"><label>כותרת המבחן<input id="exTitle" type="text" placeholder="מבחן דפים ב׳–י״א"></label><label>טווח דפים<input id="exRange" type="text" placeholder="דפים ב׳–י״א (10 דפים)"></label><label>חודש עברי (אופציונלי)<input id="exMonth" type="text"></label><label>שנה עברית (אופציונלי)<input id="exYear" type="text" value="תשפ״ז"></label></div><label>קישור Google Forms לתלמידים</label><input id="exUrl" type="url" placeholder="https://docs.google.com/forms/.../viewform"><label>תיאור (אופציונלי)</label><textarea id="exDesc"></textarea><button class="primary" id="exSave">שמירת קישור למבחן</button><div id="exMsg" class="meta"></div></div>`;
+ document.getElementById('adminLogout').onclick=async()=>{await sb.auth.signOut();await refreshSession();renderAdmin()};
+ const clear=()=>{kchAdminEditingId=null;['wkId','wkNumber','wkTitle','wkDaf','wkPerek','wkContent','wkDaily'].forEach(id=>document.getElementById(id).value='');document.getElementById('wkPublished').checked=false;document.getElementById('wkCurrent').checked=false;document.getElementById('wkMasechet').value=PAGE_MASECHET;document.getElementById('wkMsg').textContent=''};
+ document.getElementById('wkClear').onclick=clear;
+ document.getElementById('wkSave').onclick=async()=>{const msg=document.getElementById('wkMsg');try{const n=Number(document.getElementById('wkNumber').value),daf=document.getElementById('wkDaf').value.trim();if(!Number.isInteger(n)||n<1||n>200||!daf)throw new Error('יש למלא מספר שבוע תקין וטווח דפים');const masechet=document.getElementById('wkMasechet').value;const payload={masechet,week_number:n,title:document.getElementById('wkTitle').value.trim()||`הספק שבוע ${n}`,daf_range:daf,perek:document.getElementById('wkPerek').value.trim()||null,content:document.getElementById('wkContent').value.trim()||null,daily_breakdown:document.getElementById('wkDaily').value.trim()||null,published:document.getElementById('wkPublished').checked,is_current:document.getElementById('wkCurrent').checked,created_by:user.id,updated_at:new Date().toISOString()};let q;if(kchAdminEditingId){q=await sb.from('kch_weekly_hespek').update(payload).eq('id',kchAdminEditingId)}else{q=await sb.from('kch_weekly_hespek').upsert(payload,{onConflict:'masechet,week_number'})}if(q.error)throw q.error;if(payload.is_current){const {error:clearError}=await sb.from('kch_weekly_hespek').update({is_current:false}).eq('masechet',masechet).neq('week_number',n);if(clearError)throw clearError}kchAdminEditingId=null;await renderAdmin();const status=document.getElementById('wkMsg');if(status)status.textContent='נשמר בהצלחה.'}catch(e){msg.textContent='שגיאה: '+(e?.message||'לא ניתן לשמור את ההספק')}};
+ root.querySelectorAll('[data-edit-week]').forEach(b=>b.onclick=()=>{const r=weekly.find(x=>String(x.id)===b.dataset.editWeek);if(!r)return;kchAdminEditingId=r.id;document.getElementById('wkId').value=r.id;document.getElementById('wkMasechet').value=r.masechet;document.getElementById('wkNumber').value=r.week_number;document.getElementById('wkTitle').value=r.title||'';document.getElementById('wkDaf').value=r.daf_range||'';document.getElementById('wkPerek').value=r.perek||'';document.getElementById('wkContent').value=r.content||'';document.getElementById('wkDaily').value=r.daily_breakdown||'';document.getElementById('wkPublished').checked=!!r.published;document.getElementById('wkCurrent').checked=!!r.is_current;window.scrollTo({top:0,behavior:'smooth'})});
+ document.getElementById('resSave').onclick=async()=>{const msg=document.getElementById('resMsg');try{const title=document.getElementById('resTitle').value.trim(),url=document.getElementById('resUrl').value.trim();if(!title||!url)throw new Error('יש למלא כותרת וקישור');const payload={masechet:PAGE_MASECHET,tool_type:document.getElementById('resType').value,scope_type:'general',title,description:document.getElementById('resDescription').value.trim()||null,file_path:url,file_name:url.split('/').pop().slice(0,160),created_by:user.id,is_published:true};const {error}=await sb.from('kch_tools').insert(payload);if(error)throw error;msg.textContent='חומר העזר נשמר.';document.getElementById('resTitle').value='';document.getElementById('resUrl').value='';document.getElementById('resDescription').value=''}catch(e){msg.textContent='שגיאה: '+e.message}};
+ document.getElementById('exSave').onclick=async()=>{const msg=document.getElementById('exMsg');try{const title=document.getElementById('exTitle').value.trim(),url=document.getElementById('exUrl').value.trim(),range=document.getElementById('exRange').value.trim();if(!title||!url||!range)throw new Error('יש למלא כותרת, טווח דפים וקישור Google Forms');if(!/^https:\/\/docs\.google\.com\/forms\//.test(url))throw new Error('יש להכניס קישור Google Forms תקין');const payload={masechet:PAGE_MASECHET,title,description:(range+' · '+document.getElementById('exDesc').value.trim()).trim(),hebrew_month:document.getElementById('exMonth').value.trim()||null,hebrew_year:document.getElementById('exYear').value.trim()||null,google_form_url:url,mode:'google_form',published:true,created_by:user.id};const {error}=await sb.from('kch_monthly_exams').insert(payload);if(error)throw error;msg.textContent='קישור המבחן נשמר. לא נשמרים ציונים או תוצאות.';document.getElementById('exTitle').value='';document.getElementById('exRange').value='';document.getElementById('exUrl').value='';document.getElementById('exDesc').value=''}catch(e){msg.textContent='שגיאה: '+e.message}};
+}
+function renderPersonal(){const root=document.getElementById('personal');if(root)root.innerHTML=''}
+async function go(v){if(v==='personal')v='admin';const el=document.getElementById(v);if(!el)return;document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));el.classList.add('active');setNav(v);try{if(v==='home')renderHome();if(v==='plan')renderPlan();if(v==='tools')await renderTools();if(v==='cards'){toolsMasechet=PAGE_MASECHET;await renderCards()}if(v==='admin')await renderAdmin();window.scrollTo({top:0,behavior:'smooth'})}catch(e){console.error(e);el.innerHTML=`<div class="card error">אירעה שגיאה: ${kchEsc(e.message)}</div>`}}
+function bindNavigation(){document.querySelectorAll('.navbtn').forEach(b=>b.onclick=()=>go(b.dataset.view))}
+async function kchNoPersonalProgress(){return {}}
+kchGetFlashProgress=async()=>({});kchSaveFlashProgress=async()=>{};
+// Rango de tarjetas vinculado al último hespek publicado manualmente.
+kchWeekDafRange=function(masechet){
+ if(masechet!==PAGE_MASECHET || !kchPublishedWeek?.daf_range)return null;
+ const pts=[...String(kchPublishedWeek.daf_range).matchAll(/דף\s+([א-תךםןףץ]+)[׳״"']*\s+ע[״"׳']?([אב])/g)].map(m=>({daf:kchHebNumToInt(m[1]),amud:m[2]})).filter(x=>x.daf);
+ return pts.length>=2?{start:pts[0],end:pts[pts.length-1]}:null;
+};
+kchAllDafRangeThroughNow=function(masechet){
+ if(masechet!==PAGE_MASECHET || !kchWeeklyRows.length)return null;
+ const pts=[];kchWeeklyRows.forEach(w=>{const a=[...String(w.daf_range||'').matchAll(/דף\s+([א-תךםןףץ]+)[׳״"']*\s+ע[״"׳']?([אב])/g)].map(m=>({daf:kchHebNumToInt(m[1]),amud:m[2]})).filter(x=>x.daf);pts.push(...a)});
+ return pts.length>=2?{start:pts[0],end:pts[pts.length-1]}:null;
+};
+// No se presenta ni se mantiene un perfil de alumno; solo se consulta el rol del administrador.
+async function refreshSession(){
+ if(!sb)return;
+ const {data:authData,error:authError}=await sb.auth.getUser();
+ if(authError)console.warn('No se pudo leer la sesión:',authError);
+ user=authData?.user||null;profile=null;
+ if(user){
+  let {data:p,error}=await sb.from('kch_profiles').select('id,full_name,role').eq('id',user.id).maybeSingle();
+  if(error||!p){const fallback=await sb.from('profiles').select('id,full_name,role').eq('id',user.id).maybeSingle();if(!fallback.error&&fallback.data)p=fallback.data;}
+  profile=p||null;
+ }
+ const nav=document.getElementById('adminNav');if(nav)nav.classList.remove('hidden');
+}
+
+async function kchSetupFinal(){
+ document.body.classList.remove('theme-sanhedrin','theme-bava');document.body.classList.add(PAGE_MASECHET==='סנהדרין'?'theme-sanhedrin':'theme-bava');document.title='קנין תורה — מסכת '+PAGE_MASECHET;
+ const switchLink=document.getElementById('switchMasechet');if(switchLink){switchLink.href=PAGE_MASECHET==='סנהדרין'?'?masechet=bava':location.pathname;switchLink.textContent=PAGE_MASECHET==='סנהדרין'?'מעבר למסכת בבא קמא ←':'← חזרה למסכת סנהדרין'}
+ const personalNav=document.querySelector('.navbtn[data-view="personal"]');if(personalNav)personalNav.remove();const p=document.getElementById('personal');if(p)p.remove();const adminNav=document.getElementById('adminNav');if(adminNav){adminNav.classList.remove('hidden');adminNav.innerHTML='⚙<br>מנהל';adminNav.dataset.view='admin'}
+ const nav=document.querySelector('nav');if(nav){const btns=[...nav.querySelectorAll('.navbtn')];btns.forEach(b=>b.classList.remove('active'));const h=nav.querySelector('[data-view="home"]');if(h)h.classList.add('active')}
+ if(sb){try{await refreshSession()}catch(e){console.warn(e)}}bindNavigation();renderHome();
+}
+document.addEventListener('DOMContentLoaded',()=>setTimeout(kchSetupFinal,80));
+</script>
+</body></html>
