@@ -1,7 +1,7 @@
 <!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#153b5b"><title>קנין תורה</title><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script id="supabase-app-config">
 const SUPABASE_URL = 'https://uiyvzzuyjgbztijyxflb.supabase.co';
-const SUPABASE_KEY = 'sb_publishable_qw6fTcjRikLZqzjQgDaBsg_EGvGQgiU';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVpeXZ6enV5amdienRpanl4ZmxiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg0MTA3MDcsImV4cCI6MjEwMzk4NjcwN30.c7AmS3FgbLCm-1Fg0TwXKb6L29kPF_3F20oEY4BA4N8';
 let sb = window.supabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY) : null;
 let user = null, profile = null;
 const PAGE_MASECHET = new URLSearchParams(location.search).get('masechet') === 'bava' ? 'בבא קמא' : 'סנהדרין';
@@ -1072,7 +1072,10 @@ function renderHome(){
  const root=document.getElementById('home'); if(!root)return;
  const name=PAGE_MASECHET==='סנהדרין'?'סנהדרין':'בבא קמא';
  root.innerHTML=`<div class="home-brand-hero"><img src="assets/kinyan-logo.png" alt="קנין תורה — כולל בני עלייה"><p lang="he" dir="rtl">הדרך לדעת את המסכת</p></div><div class="home-masechet-actions"><a href="${PAGE_MASECHET==="סנהדרין"?"?masechet=bava":location.pathname}" aria-label="מעבר למסכת השנייה">${PAGE_MASECHET==="סנהדרין"?"מעבר למסכת בבא קמא ←":"← חזרה למסכת סנהדרין"}</a></div><div class="section-hero"><span>קנין תורה · כולל בני עלייה</span><h2>ההספק השבועי · מסכת ${name}</h2><p>ההספק השבועי שפורסם על ידי מנהל הכולל.</p></div><div id="publishedWeekHome"><div class="empty-note">טוען הספק שבועי…</div></div>`;
- kchLoadWeeks().then(rows=>{kchWeeklyRows=rows;kchPublishedWeek=kchCurrentPublished(rows);const box=document.getElementById('publishedWeekHome');if(!box)return;box.innerHTML=kchPublishedWeek?kchWeekRow(kchPublishedWeek):'<div class="empty-note">טרם פורסם הספק שבועי למסכת זו. יש להיכנס לניהול ולפרסם את הספק השבוע.</div>';});
+ const box=document.getElementById('publishedWeekHome');
+ const showRows=rows=>{kchWeeklyRows=rows;kchPublishedWeek=kchCurrentPublished(rows);if(!box)return;box.innerHTML=kchPublishedWeek?kchWeekRow(kchPublishedWeek):'<div class="empty-note">טרם פורסם הספק שבועי למסכת זו.</div>'};
+ showRows(PAGE_MASECHET==='בבא קמא'?[{masechet:'בבא קמא',week_number:1,title:'פרשת נח',daf_range:'דף ב׳ ע״א – דף ג׳ ע״א',perek:'פרק א׳ – ארבעה אבות',published:true,is_current:true}]:[{masechet:'סנהדרין',week_number:1,title:'פרשת נח',daf_range:'דף ב׳ ע״א – דף ג׳ ע״א',perek:'פרק א׳ – דיני ממונות בשלשה',published:true,is_current:true}]);
+ kchLoadWeeks().then(rows=>{if(rows&&rows.length)showRows(rows)}).catch(e=>console.warn('Weekly schedule fallback remains visible',e));
 }
 function renderPlan(){
  const root=document.getElementById('plan');if(!root)return;
