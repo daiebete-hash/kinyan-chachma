@@ -1057,9 +1057,15 @@ function kchMasechet(){return PAGE_MASECHET}
 function kchDafRangeText(r){return r?.daf_range || 'Rango de דפים pendiente'}
 function kchWeekRow(r){return `<article class="card current-week"><div class="week-top"><span class="badge">${r.week_number?'שבוע '+kchEsc(r.week_number):'הספק שבועי'}</span><strong>${kchEsc(r.title||'הספק השבוע')}</strong></div><div class="week-subject"><span>מסכת ${kchEsc(PAGE_MASECHET)}</span><span>${kchEsc(r.perek||'')}</span></div><h2>${kchEsc(kchDafRangeText(r))}</h2><div class="week-meta">${kchEsc(r.content||'')}</div>${r.daily_breakdown?`<div class="detail-block"><strong>חלוקה לפי ימים</strong><div>${kchEsc(r.daily_breakdown).replace(/\n/g,'<br>')}</div></div>`:''}</article>`}
 async function kchLoadWeeks(){
- if(!sb) return [];
- const {data,error}=await sb.from('kch_weekly_hespek').select('*').eq('masechet',PAGE_MASECHET).eq('published',true).order('week_number',{ascending:true});
- if(error){console.warn('kch_weekly_hespek',error);return []} return data||[];
+ const fallback = PAGE_MASECHET==='בבא קמא'
+  ? [{masechet:'בבא קמא',week_number:1,title:'פרשת נח',daf_range:'דף ב׳ ע״א – דף ג׳ ע״א',perek:'פרק א׳ – ארבעה אבות',published:true,is_current:true,_offline_fallback:true}]
+  : [{masechet:'סנהדרין',week_number:1,title:'פרשת נח',daf_range:'דף ב׳ ע״א – דף ג׳ ע״א',perek:'פרק א׳ – דיני ממונות בשלשה',published:true,is_current:true,_offline_fallback:true}];
+ if(!sb){console.warn('Supabase client unavailable; showing saved weekly fallback');return fallback}
+ try {
+  const {data,error}=await sb.from('kch_weekly_hespek').select('*').eq('masechet',PAGE_MASECHET).eq('published',true).order('week_number',{ascending:true});
+  if(error){console.warn('kch_weekly_hespek',error);return fallback}
+  return data&&data.length?data:fallback;
+ } catch(e){console.warn('kch_weekly_hespek fetch failed',e);return fallback}
 }
 function kchCurrentPublished(rows){if(!rows.length)return null;const explicit=rows.filter(r=>r.is_current===true);return explicit.sort((a,b)=>Number(b.week_number)-Number(a.week_number))[0]||rows[rows.length-1]}
 function renderHome(){
