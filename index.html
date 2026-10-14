@@ -878,6 +878,10 @@ header.top .top-actions{display:none!important}
     </section><section id="tools" class="view"></section><section id="admin" class="view"></section>
 </main></div><nav><button class="navbtn active" data-view="home">⌂<br>ראשי</button><button class="navbtn" data-view="plan">▤<br>תכנית</button><button class="navbtn" data-view="tools">🧰<br>כלים</button><button class="navbtn" data-view="cards">🃏<br>כרטיסיות</button><button class="navbtn" data-view="personal">♙<br>אישי</button><button class="navbtn hidden" id="adminNav" data-view="admin">⚙<br>ניהול</button></nav>
 
+<script src="assets/kch_sanhedrin_c_flashcards.js"></script>
+<script src="assets/kch_bava_kama_c_flashcards.js"></script>
+<script src="assets/kch_sanhedrin_e_flashcards.js"></script>
+<script src="assets/kch_bava_kama_e_flashcards.js"></script>
 <script src="assets/kinyan-app.js"></script>
 
 
@@ -1049,7 +1053,6 @@ window.toolsType = window.toolsType || 'summary';
 window.user = window.user || null;
 window.profile = window.profile || null;
 window.currentIndex = Number.isInteger(window.currentIndex) ? window.currentIndex : 0;
-if (!window.sb && window.supabase) window.sb = window.supabase.createClient(window.SUPABASE_URL, window.SUPABASE_KEY);
 </script>
 <script id="kinyan-final-architecture-js">
 // Nueva arquitectura: dos espacios independientes, publicación manual y sin cuentas de alumnos.
