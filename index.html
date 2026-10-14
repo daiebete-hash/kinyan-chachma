@@ -1074,8 +1074,11 @@ function renderHome(){
  root.innerHTML=`<div class="home-brand-hero"><img src="assets/kinyan-logo.png" alt="קנין תורה — כולל בני עלייה"><p lang="he" dir="rtl">הדרך לדעת את המסכת</p></div><div class="home-masechet-actions"><a href="${PAGE_MASECHET==="סנהדרין"?"?masechet=bava":location.pathname}" aria-label="מעבר למסכת השנייה">${PAGE_MASECHET==="סנהדרין"?"מעבר למסכת בבא קמא ←":"← חזרה למסכת סנהדרין"}</a></div><div class="section-hero"><span>קנין תורה · כולל בני עלייה</span><h2>ההספק השבועי · מסכת ${name}</h2><p>ההספק השבועי שפורסם על ידי מנהל הכולל.</p></div><div id="publishedWeekHome"><div class="empty-note">טוען הספק שבועי…</div></div>`;
  const box=document.getElementById('publishedWeekHome');
  const showRows=rows=>{kchWeeklyRows=rows;kchPublishedWeek=kchCurrentPublished(rows);if(!box)return;box.innerHTML=kchPublishedWeek?kchWeekRow(kchPublishedWeek):'<div class="empty-note">טרם פורסם הספק שבועי למסכת זו.</div>'};
- showRows(PAGE_MASECHET==='בבא קמא'?[{masechet:'בבא קמא',week_number:1,title:'פרשת נח',daf_range:'דף ב׳ ע״א – דף ג׳ ע״א',perek:'פרק א׳ – ארבעה אבות',published:true,is_current:true}]:[{masechet:'סנהדרין',week_number:1,title:'פרשת נח',daf_range:'דף ב׳ ע״א – דף ג׳ ע״א',perek:'פרק א׳ – דיני ממונות בשלשה',published:true,is_current:true}]);
- kchLoadWeeks().then(rows=>{if(rows&&rows.length)showRows(rows)}).catch(e=>console.warn('Weekly schedule fallback remains visible',e));
+ const initialWeek=PAGE_MASECHET==='בבא קמא'?{masechet:'בבא קמא',week_number:1,title:'פרשת נח',daf_range:'דף ב׳ ע״א – דף ג׳ ע״א',perek:'פרק א׳ – ארבעה אבות',published:true,is_current:true}:{masechet:'סנהדרין',week_number:1,title:'פרשת נח',daf_range:'דף ב׳ ע״א – דף ג׳ ע״א',perek:'פרק א׳ – דיני ממונות בשלשה',published:true,is_current:true};
+ try { showRows([initialWeek]); }
+ catch(e) { console.error('Could not render weekly hespek',e); box.innerHTML='<article class="card current-week"><div class="week-top"><span class="badge">שבוע 1</span><strong>פרשת נח</strong></div><div class="week-subject"><span>מסכת '+name+'</span><span>'+initialWeek.perek+'</span></div><h2>'+initialWeek.daf_range+'</h2></article>'; }
+ // Refresh from Supabase in the background, but never let a failed or slow request hide the visible weekly program.
+ kchLoadWeeks().then(rows=>{if(rows&&rows.length){try{showRows(rows)}catch(e){console.warn('Could not refresh weekly hespek',e)}}}).catch(e=>console.warn('Weekly schedule fallback remains visible',e));
 }
 function renderPlan(){
  const root=document.getElementById('plan');if(!root)return;
